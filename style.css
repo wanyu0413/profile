@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap');
+
+h1 {
+  color: #FF869E;
+  font-family: 'Playfair Display', serif;
+  font-size: 28PX;
+}
+
+p {
+  color: gray;
+  margin: 20px auto;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+h2 {
+  color: #A10035;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 300;
+  text-align: center;
+  background-color: #FFC4C4;
+}
+
+a {
+  text-decoration: none;
+  color: #A10035
+}
+
+a:hover {
+  color: #FF869E;
+  transition-duration: 3s,
+}
+
+.btn {
+  background-color: #FFE5F1;
+  padding: 10px;
+  margin: 20px 20px;
+  border-radius: 20%;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.btn:hover {
+  color: #FFE5F1;
+  background-color:#FF869E;
+  transition-duration: 2s,
+}
+
+.btn:not(:hover) {
+  transition-duration: 1s;
+}
+
+li {
+  font-size: 30px;
+}
+
+.list-inline li a:hover {
+  transition-duration: 1s;
+  color: #FF869E;
+  font-size: larger;
+}
+
+.list-inline li a:not(:hover) {
+  transition-duration: 1s;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.card-white{
+  background-color: #FFE7BF;
+  padding: 30px;
+  margin: 30px 60px;
+  border: 1px solid rgba(255,255,255,.5);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+@media (max-width: 960px){
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 720px){
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 540px){
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+}
