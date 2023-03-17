@@ -24,27 +24,22 @@ p {
 }
 
 h2 {
-  color: #886F6F;
+  color: #ffffff;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
 }
 
 body {
-  font-family: 'Roboto Serif', serif;
   font-weight: 300;
-  text-align: center;
-  background-color: #FFE2E2;
+  background:#dbb6bd;
+  color:#fff;
+  font-family:Arial,sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #694E4E;
   text-shadow:  #00000010 1px 0 10px;
-}
-
-a:hover {
-  color: #E9B2BC;
-  transition-duration: 3s,
 }
 
 .btn {
@@ -72,7 +67,7 @@ li {
 
 .list-inline li a:hover {
   transition-duration: 1s;
-  color: #d6a2ac;
+  color: #ffffff;
   font-size: larger;
 }
 
@@ -91,7 +86,8 @@ li {
 }
 
 .card-white{
-  background-color: #F1C5C5;
+  text-align: center;
+  background-color: #bb8d96;
   padding: 30px;
   margin: 30px 60px;
   border: 2px solid rgba(255,255,255,.5);
