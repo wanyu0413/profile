@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap');
 
-.banner{
+.info{
+  display: flex;
 }
 
 h1 {
@@ -88,7 +89,7 @@ li {
 .card-white{
   text-align: center;
   background-color: #bb8d96;
-  padding: 30px;
+  padding: 20px;
   margin: 30px 60px;
   border: 2px solid rgba(255,255,255,.5);
   border-radius: 20px;

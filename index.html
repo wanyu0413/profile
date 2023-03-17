@@ -22,63 +22,70 @@
   </head>
 
   <body>
-    <div class="banner">
+
+    <div>
       <svg height="210" width="800">
-        <text
-          id="text"
-          x="0"
-          y="80"
-          stroke-dashoffset="560"
-          style="
-            font-weight: bold;
-            font-size: 100px;
-            stroke: #fff;
-            fill: transparent;
-            stroke-width: 1px;
-            stroke-dasharray: 560;
-          "
-        >
-          <tspan x="0" y="80">Hey</tspan>
-          <tspan x="0" y="180">I am Wanyu</tspan>
-        </text>
-        <animate
-          xlink:href="#text"
-          attributeName="stroke-dashoffset"
-          attributeType="XML"
-          to="0"
-          dur="1.5s"
-          fill="freeze"
-          begin="0.5s"
-        />
-      </svg>
-      <!-- <h1>Hey, I am Wanyu</h1> -->
-      <h2>Web Developer</h2>
-      <img
-        class="img-circle"
-        src="https://avatars.githubusercontent.com/u/120252634?v=4"
-        alt="Profile image"
-      />
-      <p>
-        Whether it's creating user-friendly interfaces or building robust
-        backend systems, I'm excited to bring my skills and passion for web
-        development to new opportunities.
-      </p>
+          <text
+            id="text"
+            x="0"
+            y="80"
+            stroke-dashoffset="560"
+            style="
+              font-weight: bold;
+              font-size: 100px;
+              stroke: #fff;
+              fill: transparent;
+              stroke-width: 1px;
+              stroke-dasharray: 560;
+            "
+          >
+            <tspan x="0" y="80">Hey</tspan>
+            <tspan x="0" y="180">I am Wanyu</tspan>
+          </text>
+          <animate
+            xlink:href="#text"
+            attributeName="stroke-dashoffset"
+            attributeType="XML"
+            to="0"
+            dur="1.5s"
+            fill="freeze"
+            begin="0.5s"
+          />
+        </svg>
     </div>
-    <div class="card-white">
-      <h2>My social links</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        </li>
-        <li>
-          <a href="" target="_blank"
-            ><i class="fa-brands fa-square-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </li>
-      </ul>
+      <!-- <h1>Hey, I am Wanyu</h1> -->
+    <div class="info">
+      <div>
+        <h2>Web Developer</h2>
+        <img
+          class="img-circle"
+          src="https://avatars.githubusercontent.com/u/120252634?v=4"
+          alt="Profile image"
+        />
+        <p>
+          Whether it's creating user-friendly interfaces or building robust
+          backend systems, I'm excited to bring my skills and passion for web
+          development to new opportunities.
+        </p>
+      </div>
+      <div class="card-white">
+        <ul class="list-inline">
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+      </div>
     </div>
     <script src="myScript.js"></script>
   </body>
