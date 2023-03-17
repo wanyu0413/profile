@@ -77,7 +77,7 @@ li {
 }
 
 .list-inline > li {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 0px 20px;
 }
 
