@@ -10,81 +10,108 @@
       href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
     />
     <link href="style.css" rel="stylesheet" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap"
       rel="stylesheet"
     />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
-
-    <div>
-      <svg height="210" width="800">
-          <text
-            id="text"
-            x="0"
-            y="80"
-            stroke-dashoffset="560"
-            style="
-              font-weight: bold;
-              font-size: 100px;
-              stroke: #fff;
-              fill: transparent;
-              stroke-width: 1px;
-              stroke-dasharray: 560;
-            "
-          >
-            <tspan x="0" y="80">Hey</tspan>
-            <tspan x="0" y="180">I am Wanyu!</tspan>
-          </text>
-          <animate
-            xlink:href="#text"
-            attributeName="stroke-dashoffset"
-            attributeType="XML"
-            to="0"
-            dur="1.5s"
-            fill="freeze"
-            begin="0.5s"
-          />
-        </svg>
+    <div class="banner">
+      <div class="container">
+        <div>
+          <svg height="210" width="600">
+            <text
+              id="text"
+              x="0"
+              y="80"
+              stroke-dashoffset="560"
+              style="
+                font-weight: bold;
+                font-size: 100px;
+                stroke: #fff;
+                fill: transparent;
+                stroke-width: 1px;
+                stroke-dasharray: 560;
+              "
+            >
+              <tspan x="0" y="80">Hey</tspan>
+              <tspan x="0" y="180">I am Wanyu!</tspan>
+            </text>
+            <animate
+              xlink:href="#text"
+              attributeName="stroke-dashoffset"
+              attributeType="XML"
+              to="0"
+              dur="1.5s"
+              fill="freeze"
+              begin="0.5s"
+            />
+          </svg>
+        </div>
+        <div class="info">
+          <div>
+            <img
+              class="img-circle"
+              src="https://avatars.githubusercontent.com/u/120252634?v=4"
+              alt="Profile image"
+            />
+          </div>
+          <div class="card-description">
+            <h2>Web Developer</h2>
+            <p>
+              Whether it's creating user-friendly interfaces or building robust
+              backend systems, I'm excited to bring my skills and passion for
+              web development to new opportunities.
+            </p>
+            <div class="card-social-icons">
+              <ul class="list-inline">
+                <li>
+                  <a href="" target="_blank"
+                    ><i class="fa-brands fa-square-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="" target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-      <!-- <h1>Hey, I am Wanyu</h1> -->
-    <div class="info">
-      <div>
-        <h2>Web Developer</h2>
+    <div class="cards">
+      <div class="card-trip">
         <img
-          class="img-circle"
-          src="https://avatars.githubusercontent.com/u/120252634?v=4"
-          alt="Profile image"
+          src="https://user-images.githubusercontent.com/51001611/224602265-0bfb67e5-9dd4-4929-908a-ecd9a21f0bde.jpg"
         />
-        <p>
-          Whether it's creating user-friendly interfaces or building robust
-          backend systems, I'm excited to bring my skills and passion for web
-          development to new opportunities.
-        </p>
+        <div>
+          <h1>Binfind</h1>
+          <p>Short description here!</p>
+        </div>
       </div>
-      <div class="card-social-icons">
-        <ul class="list-inline">
-          <li>
-            <a href="" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="" target="_blank"
-              ><i class="fa-brands fa-square-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          </li>
-        </ul>
+      <div class="card-trip">
+        <img
+          src="https://user-images.githubusercontent.com/51001611/224603361-920cbd4c-2bf3-49cd-bbf3-3b49931cc239.jpg"
+        />
+        <div>
+          <h1>City2Table</h1>
+          <p>Short description here!</p>
+        </div>
       </div>
+      <div class="card-trip">
+        <img
+          src="https://user-images.githubusercontent.com/51001611/224603361-920cbd4c-2bf3-49cd-bbf3-3b49931cc239.jpg"
+        />
+        <div>
+          <h1>WatchList</h1>
+          <p>Short description here!</p>
+        </div>
       </div>
     </div>
     <script src="myScript.js"></script>
