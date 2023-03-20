@@ -17,7 +17,7 @@
 }
 
 .card-description{
-  padding: 20px 40px;
+  padding: 30px 40px;
 }
 
 svg{
@@ -27,8 +27,10 @@ svg{
 .info p {
   color: #F9F1F0;
   margin: 30px auto;
-  font-weight: 500;
+  font-weight: 100;
+  font-size: 20px;
   width: 400px;
+  padding-left: 16px;
 }
 
 .img-circle {
@@ -40,19 +42,20 @@ svg{
   margin: 20px 0px 20px 30px
 }
 
-h2 {
+h1 {
   color: #F9F1F0;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 28px;
+  padding-left: 14px;
 }
 
 body {
   min-width: 700px;
   margin: 0PX;
   font-weight: 300;
-  background: whitesmoke;
+  background: #F9F1F0;
   color: #886F6F;
-  font-family:Arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -67,7 +70,7 @@ li {
 
 .list-inline li a:hover {
   transition-duration: 1s;
-  color: #ffffff;
+  color: #F9F1F0;
   font-size: larger;
 }
 
@@ -89,8 +92,34 @@ li {
   margin: 30px 60px;
   padding: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+}
+
+.card-trip {
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  color: #886F6F;
+  font-family: 'Playfair Display', serif;
+  font-size: 24PX;
+  margin: 10px 15px;
+}
+
+.card-trip p {
+  font-size: 14px;
+  opacity: .7;
+  margin: 15px 20px;
 }
 
 .card-social-icons{
@@ -107,20 +136,6 @@ li {
 @media (max-width: 830px){
   .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 16px;
-  }
-
-  .img-circle {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-  }
-}
-
-@media (max-width: 720px){
-  .cards{
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
   }
@@ -129,45 +144,36 @@ li {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    margin: 40px 0px 20px 30px
+  }
+}
+
+@media (max-width: 720px){
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    margin: 40px 0px 20px 30px
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (max-width: 540px){
   .cards{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-gap: 26px;
+    margin: 40px 0px 20px 30px
   }
 
   .img-circle {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
-}
-
-.card-trip {
-  border-radius: 10px;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-trip h1 {
-  color: #886F6F;
-  font-family: 'Playfair Display', serif;
-  font-size: 24PX;
-  margin: 10px 15px;
-}
-
-.card-trip p {
-  font-size: 14px;
-  opacity: .7;
-  margin: 15px 20px;
 }
