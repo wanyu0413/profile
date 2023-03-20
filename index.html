@@ -9,7 +9,6 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
     />
-    <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,6 +16,8 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -60,7 +61,11 @@
               alt="Profile image"
             />
           </div>
-          <div class="card-description">
+          <div
+            class="card-description"
+            data-aos="zoom-out-left"
+            data-aos-duration="3000"
+          >
             <h1>Web Developer</h1>
             <p>
               I work as a web developer proficient in both front-end and
@@ -71,7 +76,7 @@
       </div>
     </div>
     <div class="cards">
-      <div class="card-trip">
+      <div class="card-trip" data-aos="fade-up-right" data-aos-duration="3000">
         <img
           src="https://user-images.githubusercontent.com/51001611/224602265-0bfb67e5-9dd4-4929-908a-ecd9a21f0bde.jpg"
         />
@@ -84,7 +89,7 @@
           </p>
         </div>
       </div>
-      <div class="card-trip">
+      <div class="card-trip" data-aos="fade-up" data-aos-duration="3000">
         <img
           src="https://user-images.githubusercontent.com/51001611/224603361-920cbd4c-2bf3-49cd-bbf3-3b49931cc239.jpg"
         />
@@ -94,15 +99,13 @@
             City2Table connects food lovers with local chefs for in-home cooking
             experiences. Users can browse and book courses from various cuisines
             and dietary preferences, and chefs can list their courses with
-            custom menus, prices, and availability. Enjoy unique flavors,
-            support local businesses, and have a culinary experience at home
-            with City2Table.
+            custom menus, prices, and availability.
           </p>
         </div>
       </div>
-      <div class="card-trip">
+      <div class="card-trip" data-aos="fade-up-left" data-aos-duration="3000">
         <img
-          src="https://user-images.githubusercontent.com/51001611/224603361-920cbd4c-2bf3-49cd-bbf3-3b49931cc239.jpg"
+          src="https://res.cloudinary.com/drpj8ime1/image/upload/v1679311393/Screen_Shot_2023-03-20_at_19.43.43_w0oezz.png"
         />
         <div>
           <h2>WatchList</h2>
@@ -122,6 +125,10 @@
         </li>
       </ul>
     </div>
-    <script src="myScript.js"></script>
+    <!-- <script src="myScript.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
