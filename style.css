@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap');
 
 .banner{
-  background:#dbb6bd;
+  background: #b796a3;
   padding-bottom: 40px;
+  border-bottom: 2px solid rgba(255,255,255,.5);
 }
 
 .container{
@@ -23,14 +24,8 @@ svg{
   padding: 20px 30px;
 }
 
-h1 {
-  color: #886F6F;
-  font-family: 'Playfair Display', serif;
-  font-size: 32PX;
-}
-
 .info p {
-  color: #886F6F;
+  color: #F9F1F0;
   margin: 30px auto;
   font-weight: 500;
   width: 400px;
@@ -42,15 +37,17 @@ h1 {
   height: 200px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   border: 2px solid rgba(255,255,255,.5);
+  margin: 20px 0px 20px 30px
 }
 
 h2 {
-  color: #ffffff;
+  color: #F9F1F0;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
 }
 
 body {
+  min-width: 700px;
   margin: 0PX;
   font-weight: 300;
   background: whitesmoke;
@@ -97,13 +94,13 @@ li {
 }
 
 .card-social-icons{
-  width: fit-content;
+  /* width: fit-content; */
   text-align: center;
-  background-color: #bb8d96;
+  background-color: #b796a3;
   padding: 8px;
   margin: auto;
-  border: 2px solid rgba(255,255,255,.5);
-  border-radius: 15px;
+  border-top: 2px solid rgba(255,255,255,.5);
+  /* border-radius: 15px; */
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
@@ -162,14 +159,15 @@ li {
   object-fit: cover;
 }
 
-.card-trip h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
+.card-trip h1 {
+  color: #886F6F;
+  font-family: 'Playfair Display', serif;
+  font-size: 24PX;
+  margin: 10px 15px;
 }
 
 .card-trip p {
-  font-size: 12px;
+  font-size: 14px;
   opacity: .7;
-  margin: 0;
+  margin: 15px 20px;
 }
