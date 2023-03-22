@@ -22,7 +22,10 @@
 }
 
 svg{
+  display: block;
   padding: 20px 30px;
+  height: 210px;
+  width: 600px;
 }
 
 .info p {
@@ -163,6 +166,12 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
   }
+
+  .info p {
+    width: 300px;
+    margin: 16px 0px;
+  }
+
 }
 
 @media (max-width: 540px){
@@ -214,9 +223,25 @@ li {
 
   .card-description {
     padding: 0px 40px;
+  }
 }
-/*
-  #text{
-    font-size: 60px;
-  } */
+
+.icon-dash {
+  text-decoration: none;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px dashed #b796a3;
+  color: #b796a3;
+  margin: 5px;
+}
+
+.icon-dash > a{
+  text-align: center;
+}
+
+.icon-dash:hover {
+  background: rgba(183, 150, 163, 0.1);
 }
