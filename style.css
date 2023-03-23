@@ -241,7 +241,7 @@ li {
   height: 45px;
   border-radius: 10px;
   background: transparent;
-  border: 1px dashed #b796a3;
+  border: 1.5px solid #b796a375;
   color: #b796a3;
   margin: 5px;
 }
