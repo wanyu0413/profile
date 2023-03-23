@@ -230,7 +230,7 @@ li {
   list-style: none;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .icon-dash a{
