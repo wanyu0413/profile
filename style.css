@@ -72,13 +72,13 @@ li {
   font-size: 30px;
 }
 
-.list-inline li a:hover {
+.list-inline .icon-footer a:hover {
   transition-duration: 1s;
   color: #F9F1F0;
   font-size: larger;
 }
 
-.list-inline li a:not(:hover) {
+.list-inline .icon-footer a:not(:hover) {
   transition-duration: 1s;
 }
 
@@ -226,7 +226,14 @@ li {
   }
 }
 
-.icon-dash {
+.icon-dash-flex{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-dash a{
   text-decoration: none;
   display: inline-block;
   width: 45px;
@@ -238,10 +245,18 @@ li {
   margin: 5px;
 }
 
-.icon-dash > a{
-  text-align: center;
+.icon-dash a:hover {
+  background: rgba(183, 150, 163, 0.381);
 }
 
-.icon-dash:hover {
-  background: rgba(183, 150, 163, 0.1);
+.icon-dash i{
+  font-size: 28px;
+  margin: 8px;
+  color: #b796a3;
+}
+
+.icon-dash .fa-link{
+  font-size: 22px;
+  margin: 8px;
+  color: #b796a3;
 }
