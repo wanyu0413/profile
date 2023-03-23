@@ -212,9 +212,10 @@ li {
 
 .card-trip h2 {
   color: #886F6F;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24PX;
   margin: 10px 20px;
+  font-weight: bold;
 }
 
 .card-trip p {
