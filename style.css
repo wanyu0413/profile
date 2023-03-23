@@ -234,11 +234,12 @@ li {
 }
 
 .icon-dash a{
+  text-align: center;
   text-decoration: none;
   display: inline-block;
-  width: 45px;
+  width: 145px;
   height: 45px;
-  border-radius: 50%;
+  border-radius: 10px;
   background: transparent;
   border: 1px dashed #b796a3;
   color: #b796a3;
