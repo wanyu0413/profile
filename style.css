@@ -193,6 +193,7 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  max-width: 1400px;
 }
 
 .card-trip {
@@ -233,7 +234,7 @@ li {
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
-@media (max-width: 830px){
+@media (max-width: 1260px){
   .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -248,8 +249,8 @@ li {
   }
 
   .icon-dash-flex{
-    margin: 0px;
     flex-wrap: wrap;
+    margin: 0px;
   }
 
   .card-trip p {
@@ -257,7 +258,7 @@ li {
   }
 
   .icon-dash a {
-    margin: 13px;
+    margin: 10px 13px;
   }
 }
 
