@@ -96,12 +96,12 @@
 
 h1 {
   color: #F9F1F0;
-  font-family: 'Playfair Display', serif;
   font-size: 28px;
   padding-left: 14px;
 }
 
 #hi-header{
+  font-family: 'Playfair Display', serif;
   padding: 30px 0px 0px 0px;
   text-align: center;
   margin: 0px auto;
@@ -152,13 +152,16 @@ li {
   padding: 0px;
   display: flex;
   justify-content: space-evenly;
+  position: absolute;
+  bottom: 0px;
+  left: 22px;
 }
 
 .icon-dash a{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  width: 145px;
+  width: 140px;
   height: 45px;
   border-radius: 10px;
   background: transparent;
@@ -197,6 +200,7 @@ li {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
 }
 
 .card-trip > img {
@@ -210,13 +214,13 @@ li {
   color: #886F6F;
   font-family: 'Playfair Display', serif;
   font-size: 24PX;
-  margin: 10px 15px;
+  margin: 10px 20px;
 }
 
 .card-trip p {
   font-size: 14px;
   opacity: .7;
-  margin: 15px 20px;
+  margin: 15px 24px 86px 24px;
 }
 
 .card-social-icons{
@@ -319,5 +323,25 @@ li {
   .content h2 {
     font-size: 7em;
     right: -168px;
+  }
+}
+
+/* flip-words */
+.waviy {
+  position: relative;
+  font-family: 'Playfair Display', serif;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+/*   text-transform: uppercase; */
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
   }
 }
