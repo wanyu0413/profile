@@ -154,7 +154,7 @@ li {
   justify-content: space-evenly;
   position: absolute;
   bottom: 0px;
-  left: 22px;
+  margin: 0 auto;
 }
 
 .icon-dash a{
@@ -167,7 +167,7 @@ li {
   background: transparent;
   border: 1.5px solid #b796a375;
   color: #b796a3;
-  margin: 5px;
+  margin: 16px;
 }
 
 .icon-dash a:hover {
@@ -246,6 +246,19 @@ li {
     height: 150px;
     margin: 40px 0px 20px 30px
   }
+
+  .icon-dash-flex{
+    margin: 0px;
+    flex-wrap: wrap;
+  }
+
+  .card-trip p {
+    margin: 15px 24px 160px 24px;
+  }
+
+  .icon-dash a {
+    margin: 13px;
+  }
 }
 
 @media (max-width: 720px){
@@ -267,6 +280,10 @@ li {
     margin: 16px 0px;
   }
 
+  .icon-dash-flex{
+    flex-wrap: wrap;
+    margin: 0px;
+  }
 }
 
 @media (max-width: 540px){
@@ -288,6 +305,10 @@ li {
     width: 400px;
     margin: 16px 0px;
     }
+
+  .icon-dash-flex{
+    margin: 0 50px;
+  }
 }
 
 @media (max-width: 390px){
@@ -324,6 +345,9 @@ li {
   .content h2 {
     font-size: 7em;
     right: -168px;
+  }
+  .icon-dash a {
+    margin: 16px 12px;
   }
 }
 
