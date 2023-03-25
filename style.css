@@ -74,7 +74,7 @@
 
 .info p {
   color: #F9F1F0;
-  margin: 30px auto;
+  margin: 16px auto;
   font-weight: 100;
   font-size: 20px;
   width: 400px;
@@ -117,6 +117,7 @@ body {
   background: #F9F1F0;
   color: #886F6F;
   font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
@@ -192,10 +193,11 @@ li {
 
 /* cards */
 .cards{
-  margin: 30px 60px;
+  margin: 30px auto;
   padding: 30px;
   display: grid;
   justify-content: center;
+  justify-self: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   max-width: 1400px;
@@ -269,7 +271,7 @@ li {
 
   .content h2 {
     font-size: 7em;
-    transform: translate(20%, -50%);
+    transform: translate(270%, -50%);
   }
 }
 
@@ -279,7 +281,7 @@ li {
     justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
-    margin: 40px 0px 20px 30px
+    margin: 30px auto;
   }
 
   .info{
@@ -311,7 +313,7 @@ li {
     justify-content: center;
     grid-template-columns: 1fr;
     grid-gap: 26px;
-    margin: 40px 0px 20px 30px
+    margin: 30px auto;
   }
 
   .info{
@@ -380,6 +382,7 @@ li {
 
 /* flip-words */
 .waviy {
+  white-space: nowrap;
   position: relative;
   font-family: 'Playfair Display', serif;
 }
