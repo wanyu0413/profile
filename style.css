@@ -9,8 +9,7 @@
   color: #fff;
   font-size: 8em;
   position: absolute;
-  transform: translate(-50%, -50%);
-  right: -130px;
+  transform: translate(40%, -50%);
 }
 
 .content h2:nth-child(1) {
@@ -61,13 +60,14 @@
 }
 
 .container{
-  max-width: 600px;
+  width: 60%;
   margin: auto;
 }
 
 .info{
   padding-top: 220px;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
 }
@@ -105,6 +105,10 @@ h1 {
   padding: 30px 0px 0px 0px;
   text-align: center;
   margin: 0px auto;
+}
+
+html,body{
+  overflow-x: hidden;
 }
 
 body {
@@ -191,6 +195,7 @@ li {
   margin: 30px 60px;
   padding: 30px;
   display: grid;
+  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   max-width: 1400px;
@@ -234,9 +239,10 @@ li {
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
-@media (max-width: 1260px){
+@media (max-width: 830px){
   .cards{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
   }
@@ -260,11 +266,17 @@ li {
   .icon-dash a {
     margin: 10px 13px;
   }
+
+  .content h2 {
+    font-size: 7em;
+    transform: translate(20%, -50%);
+  }
 }
 
 @media (max-width: 720px){
   .cards{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     margin: 40px 0px 20px 30px
@@ -272,6 +284,7 @@ li {
 
   .info{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
   }
@@ -285,11 +298,17 @@ li {
     flex-wrap: wrap;
     margin: 0px;
   }
+
+  .content h2 {
+    font-size: 7em;
+    transform: translate(10%, -50%);
+  }
 }
 
 @media (max-width: 540px){
   .cards{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-gap: 26px;
     margin: 40px 0px 20px 30px
@@ -297,15 +316,20 @@ li {
 
   .info{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-gap: 16px;
-    width: 540px;
   }
 
   .info p {
     width: 400px;
     margin: 16px 0px;
     }
+
+  .content h2 {
+    font-size: 7em;
+    transform: translate(-5%, -50%);
+  }
 
   .icon-dash-flex{
     margin: 0 50px;
@@ -321,6 +345,7 @@ li {
 
   .cards{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-gap: 26px;
     margin: 30px auto;
@@ -328,9 +353,9 @@ li {
 
   .info{
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-gap: 16px;
-    width: 380px;
     margin-left: 0px;
   }
 
@@ -345,8 +370,9 @@ li {
 
   .content h2 {
     font-size: 7em;
-    right: -168px;
+    transform: translate(-17%, -50%);
   }
+
   .icon-dash a {
     margin: 16px 12px;
   }
