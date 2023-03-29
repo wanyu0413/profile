@@ -87,7 +87,7 @@
   height: 200px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   border: 2px solid rgba(255,255,255,.5);
-  margin: 20px 0px 20px 30px
+  margin: 30px 0px;
 }
 
 .card-description{
@@ -308,6 +308,12 @@ li {
 }
 
 @media (max-width: 540px){
+  .img-circle {
+    margin: 0px 130px 0px 175px;
+    width: 140px;
+    height: 140px;
+  }
+
   .cards{
     display: grid;
     justify-content: center;
@@ -324,13 +330,13 @@ li {
   }
 
   .info p {
-    width: 400px;
+    width: 350px;
     margin: 16px 0px;
-    }
+  }
 
   .content h2 {
     font-size: 7em;
-    transform: translate(-5%, -50%);
+    transform: translate(-15%, -50%);
   }
 
   .icon-dash-flex{
@@ -343,7 +349,7 @@ li {
     margin: 0px 130px;
     width: 140px;
     height: 140px;
-}
+  }
 
   .cards{
     display: grid;
@@ -351,7 +357,7 @@ li {
     grid-template-columns: 1fr;
     grid-gap: 26px;
     margin: 30px auto;
-    }
+  }
 
   .info{
     display: grid;
@@ -385,6 +391,7 @@ li {
   white-space: nowrap;
   position: relative;
   font-family: 'Playfair Display', serif;
+  padding: 0px 16px;
 }
 .waviy span {
   position: relative;
