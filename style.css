@@ -196,7 +196,7 @@ li {
 /* cards */
 .cards{
   margin: 30px auto;
-  padding: 30px;
+  padding: 0px 60px;
   display: grid;
   justify-content: center;
   justify-self: center;
@@ -296,6 +296,7 @@ li {
 }
 
 .skill-title{
+  margin-top: 90px;
   text-align: center;
   /* font: bold 80px arial, sans-serif; */
   font: bold 80px serif;
@@ -313,6 +314,7 @@ li {
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
+    padding: 0px 30px;
   }
 
   .img-circle {
@@ -348,6 +350,7 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     margin: 30px auto;
+    padding: 0px 30px;
   }
 
   .info{
@@ -386,6 +389,7 @@ li {
     grid-template-columns: 1fr;
     grid-gap: 26px;
     margin: 30px auto;
+    padding: 0px 30px;
   }
 
   .info{
@@ -435,6 +439,7 @@ li {
     grid-template-columns: 1fr;
     grid-gap: 26px;
     margin: 30px auto;
+    padding: 0px 30px;
   }
 
   .info{
