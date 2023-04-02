@@ -101,10 +101,12 @@ h1 {
 }
 
 #hi-header{
-  font-family: 'Playfair Display', serif;
   padding: 30px 0px 0px 0px;
-  text-align: center;
   margin: 0px auto;
+  text-align: center;
+  /* font: bold 40px arial, serif; */
+  font: bold 40px serif;
+  letter-spacing: 2.5px;
 }
 
 html,body{
@@ -245,13 +247,15 @@ li {
 .waviy {
   white-space: nowrap;
   position: relative;
-  font-family: 'Playfair Display', serif;
+  /* font-family: arial, serif; */
+  font-family: serif;
+  font-weight: bold;
   padding: 0px 16px;
 }
 .waviy span {
   position: relative;
   display: inline-block;
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
 /*   text-transform: uppercase; */
   animation: flip 2s infinite;
@@ -269,7 +273,7 @@ li {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 18px;
 }
 
 .skill-item{
@@ -287,10 +291,14 @@ li {
   height: 45px;
 }
 
+.skill-item h2{
+  font-size: 20px;
+}
+
 .skill-title{
   text-align: center;
-  font: bold 80px arial, sans-serif;
-  /* background-color: #565656; */
+  /* font: bold 80px arial, sans-serif; */
+  font: bold 80px serif;
   background-color: #b796a3;
   color: transparent;
   text-shadow: 3px 3px 4px rgba(255,255,255,0.5);
@@ -464,7 +472,7 @@ li {
   }
 
   .skill-title{
-    font: bold 60px arial, sans-serif;
+    font: bold 60px serif;
   }
 
   .skill-item h2{
