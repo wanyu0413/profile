@@ -96,8 +96,8 @@
 
 h1 {
   color: #F9F1F0;
-  font-size: 28px;
-  padding-left: 14px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 #hi-header{
@@ -241,6 +241,60 @@ li {
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
+/* flip-words */
+.waviy {
+  white-space: nowrap;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  padding: 0px 16px;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+/*   text-transform: uppercase; */
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
+  }
+}
+
+/* skills section */
+.skills{
+  margin: 30px auto 60px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.skill-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 18px;
+  border-radius: 50px;
+  background-color: #b796a36b;
+  border: 2.5px dotted #ffffff99;
+}
+
+.skills img{
+  width: 45px;
+  height: 45px;
+}
+
+.skill-title{
+  font-size: 40px;
+  color: #b796a3;
+  text-align: center;
+  text-shadow: 2px 3px 3px rgb(0 0 0 / 15%);
+  font-weight: bold;
+}
+
 @media (max-width: 830px){
   .cards{
     display: grid;
@@ -342,6 +396,18 @@ li {
   .icon-dash-flex{
     margin: 0 50px;
   }
+
+  .skills{
+    margin: 30px auto 60px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  .skill-item h2{
+    font-size: 18PX;
+  }
 }
 
 @media (max-width: 390px){
@@ -384,26 +450,16 @@ li {
   .icon-dash a {
     margin: 16px 12px;
   }
-}
 
-/* flip-words */
-.waviy {
-  white-space: nowrap;
-  position: relative;
-  font-family: 'Playfair Display', serif;
-  padding: 0px 16px;
-}
-.waviy span {
-  position: relative;
-  display: inline-block;
-  font-size: 40px;
-  color: #fff;
-/*   text-transform: uppercase; */
-  animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i))
-}
-@keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg)
+  .skills{
+    margin: 30px auto 60px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+
+  .skill-item h2{
+    font-size: 18PX;
   }
 }
