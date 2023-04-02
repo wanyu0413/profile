@@ -239,7 +239,7 @@ li {
   text-align: center;
   background-color: #b796a3;
   padding: 8px;
-  margin: auto;
+  margin: 90px auto 0px auto;
   border-top: 2px solid rgba(255,255,255,.5);
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
