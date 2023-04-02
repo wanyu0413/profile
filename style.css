@@ -463,6 +463,10 @@ li {
     grid-gap: 16px;
   }
 
+  .skill-title{
+    font: bold 60px arial, sans-serif;
+  }
+
   .skill-item h2{
     font-size: 18PX;
   }
