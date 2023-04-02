@@ -76,7 +76,7 @@
 .info p {
   color: #F9F1F0;
   margin: 16px auto;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 20px;
   width: 450px;
   padding-left: 16px;
@@ -230,7 +230,8 @@ li {
 }
 
 .card-trip p {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
   opacity: .7;
   margin: 15px 24px 86px 24px;
 }
