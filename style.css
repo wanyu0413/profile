@@ -210,7 +210,7 @@ li {
   border-radius: 10px;
   overflow: hidden;
   background: white;
-  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.2);
+  box-shadow: 6px 6px 20px 0px rgba(0,0,0,0.2);
   position: relative;
 }
 
