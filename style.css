@@ -14,7 +14,7 @@
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2px #ffffff;
+  -webkit-text-stroke: 2.5px rgb(255 255 255 / 90%);
 }
 
 .content h2:nth-child(2) {
@@ -83,11 +83,11 @@
 }
 
 .img-circle {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  border-radius: 56% 44% 34% 66% / 57% 60% 40% 43%;
+  width: 240px;
+  height: 240px;
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
-  border: 2px solid rgba(255,255,255,.5);
+  border: 6px solid rgba(255,255,255,.6);
   margin: 30px 0px;
 }
 
