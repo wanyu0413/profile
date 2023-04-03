@@ -1,0 +1,9 @@
+// styles.scss
+@font-face {
+  font-family: icon;
+  src: url('https://bennettfeely.com/fonts/icons.woff');
+}
+
+@include flip-cover("city2table", "c", #FFC75B);
+@include flip-cover("binfind", "b", #00A006);
+@include flip-cover("github", "g", black);
