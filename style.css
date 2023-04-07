@@ -209,7 +209,6 @@ li {
   display: block;
   font-weight: 900;
   overflow: hidden;
-  padding: 1rem 2rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -227,6 +226,7 @@ li {
 }
 .btn-53 .letters {
   display: inline-flex;
+  padding: 1rem 2rem;
 }
 .btn-53 span {
   opacity: 0;
@@ -606,6 +606,9 @@ li {
 
   .btn-53 {
     font-weight: 600;
+  }
+
+  .btn-53 .letters{
     padding: 0.8rem 1rem;
   }
 }
