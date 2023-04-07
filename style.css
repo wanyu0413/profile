@@ -187,6 +187,11 @@ li {
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
 }
+
+.btn-53 a{
+  color: white;
+}
+
 .btn-53:disabled {
   cursor: default;
 }
