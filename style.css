@@ -336,6 +336,13 @@ li {
   position: relative;
 }
 
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-trip > img {
   height: 200px;
   width: 100%;
