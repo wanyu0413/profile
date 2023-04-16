@@ -358,6 +358,12 @@ li {
   font-weight: bold;
 }
 
+.card-content > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-trip p {
   font-size: 16px;
   font-weight: 400;
