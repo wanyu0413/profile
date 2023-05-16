@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap');
 
 :root {
-  /* --base: #cdb3a7;
-  --rgb: 205, 179, 167; */
-  --base: #b796a3;
-  --rgb: 183, 150, 163;
+  --base: #cdb3a7;
+  --rgb: 205, 179, 167;
+  /* --base: #b796a3;
+  --rgb: 183, 150, 163; */
 }
 
 /* Name Title */
@@ -280,41 +280,6 @@ li {
   bottom: 0px;
   margin: 0 auto;
 }
-
-/* .icon-dash{
-  color: var(--base);
-	transition: all 0.3s;
-	position: relative;
-}
-
-.icon-dash a{
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  width: 140px;
-  height: 45px;
-  border-radius: 10px;
-  background: transparent;
-  border: 1.5px solid rgba(var(--rgb), 0.459);
-  color: var(--base);
-  margin: 16px;
-}
-
-.icon-dash a:hover {
-  background: rgba(var(--rgb), 0.38);
-}
-
-.icon-dash i{
-  font-size: 28px;
-  margin: 8px;
-  color: var(--base);
-}
-
-.icon-dash .fa-link{
-  font-size: 22px;
-  margin: 8px;
-  color: var(--base);
-} */
 
 /* cards */
 .cards{
