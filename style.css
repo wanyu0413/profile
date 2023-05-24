@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap');
 
 :root {
-  --base: #cdb3a7;
-  --rgb: 205, 179, 167;
-  /* --base: #b796a3;
-  --rgb: 183, 150, 163; */
+  /* --base: #cdb3a7;
+  --rgb: 205, 179, 167; */
+  --base: #b796a3;
+  --rgb: 183, 150, 163;
 }
 
 /* Name Title */
