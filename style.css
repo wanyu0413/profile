@@ -64,7 +64,7 @@
 .banner{
   background: var(--base);
   padding-bottom: 40px;
-  border-bottom: 2px solid rgba(255,255,255,.5);
+  border-bottom: 4px dashed rgba(255,255,255,.5);
 }
 
 .container{
@@ -342,7 +342,7 @@ li {
   background-color: var(--base);
   padding: 8px;
   margin: 90px auto 0px auto;
-  border-top: 2px solid rgba(255,255,255,.5);
+  border-top: 4px dashed rgba(255,255,255,.5);
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
 
