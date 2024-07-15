@@ -28,10 +28,6 @@ a {
   text-shadow:  #00000010 1px 0 10px;
 }
 
-li {
-  font-size: 30px;
-}
-
 /* Name Title */
 .content {
   position: relative;
@@ -171,26 +167,6 @@ h1 {
   font: bold 40px;
   letter-spacing: 2.5px;
   color: #fff;
-}
-
-.list-inline .icon-footer a:hover {
-  transition-duration: 1s;
-  color: #F9F1F0;
-  font-size: larger;
-}
-
-.list-inline .icon-footer a:not(:hover) {
-  transition-duration: 1s;
-}
-
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.list-inline {
-  list-style: none;
-  padding-left: 0px;
 }
 
 /* button_in_cards */
@@ -367,13 +343,35 @@ h1 {
   margin: 10px 24px 100px 24px;
 }
 
+/* Footer */
 .card-social-icons{
   text-align: center;
   background-color: var(--base);
-  padding: 8px;
+  padding: 4px;
   margin: 90px auto 0px auto;
   border-top: 4px dashed rgba(255,255,255,.5);
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.list-inline .icon-footer a:hover {
+  transition-duration: 1s;
+  color: #F9F1F0;
+}
+
+.list-inline .icon-footer a:not(:hover) {
+  transition-duration: 1s;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 40px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
 }
 
 /* flip-words */
