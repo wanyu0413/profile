@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>J.Wanyu</title>
     <!-- <link rel="stylesheet" href="styles.css"> -->
     <link
@@ -23,57 +22,68 @@
 
   <body>
     <div class="banner">
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#hello-header">About</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+        </ul>
+      </nav>
       <div class="container">
-        <div>
-          <h1 id="hi-header">Hello, I am</h1>
+          <h1 id="hello-header">Hello, I am</h1>
 
           <div class="content">
             <h2>Wanyu</h2>
             <h2>Wanyu</h2>
 
-            <div class="info">
-              <div>
-                <img
-                  class="img-circle"
-                  src="https://avatars.githubusercontent.com/u/120252634?v=4"
-                  alt="Profile image"
-                />
+          </div>
+          <div class="info">
+            <div>
+              <img
+                class="img-circle"
+                src="https://avatars.githubusercontent.com/u/120252634?v=4"
+                alt="Profile image"
+              />
+            </div>
+            <div
+              class="card-description"
+              data-aos="zoom-out-left"
+              data-aos-duration="3000"
+            >
+              <div class="waviy">
+                <span style="--i: 1">W</span>
+                <span style="--i: 2">e</span>
+                <span style="--i: 3">b</span>
+                &nbsp
+                <span style="--i: 4">D</span>
+                <span style="--i: 5">e</span>
+                <span style="--i: 6">v</span>
+                <span style="--i: 7">e</span>
+                <span style="--i: 8">l</span>
+                <span style="--i: 9">o</span>
+                <span style="--i: 10">p</span>
+                <span style="--i: 11">e</span>
+                <span style="--i: 12">r</span>
+                <span style="--i: 13">.</span>
               </div>
-              <div
-                class="card-description"
-                data-aos="zoom-out-left"
-                data-aos-duration="3000"
-              >
-                <div class="waviy">
-                  <span style="--i: 1">W</span>
-                  <span style="--i: 2">e</span>
-                  <span style="--i: 3">b</span>
-                  &nbsp
-                  <span style="--i: 4">D</span>
-                  <span style="--i: 5">e</span>
-                  <span style="--i: 6">v</span>
-                  <span style="--i: 7">e</span>
-                  <span style="--i: 8">l</span>
-                  <span style="--i: 9">o</span>
-                  <span style="--i: 10">p</span>
-                  <span style="--i: 11">e</span>
-                  <span style="--i: 12">r</span>
-                  <span style="--i: 13">.</span>
-                </div>
-                <p>
-                  I'm experienced in both frontend and backend development, and I'm currently focused on building beautiful websites and apps.
-                  <br />
-                  Thanks for stopping by my page!
-                </p>
-              </div>
+              <p>
+                I'm experienced in both frontend and backend development, and I'm currently focused on building beautiful websites and apps.
+                <br />
+                Thanks for stopping by my page!
+              </p>
             </div>
           </div>
-        </div>
       </div>
     </div>
 
     <div class="container">
-      <h1 class="skill-title">SKILLS</h1>
+      <h1 id="skills" class="skill-title">SKILLS</h1>
       <div class="skills">
         <div class="skill-item" data-aos="zoom-in-up" data-aos-duration="1000">
           <h2>CSS</h2>
@@ -184,7 +194,7 @@
       </div>
     </div>
 
-    <h1 class="skill-title">PROJECTS</h1>
+    <h1 class="skill-title" id="projects">PROJECTS</h1>
     <div class="cards">
       <div class="card-trip" data-aos="fade-up-right" data-aos-duration="1500">
         <img
