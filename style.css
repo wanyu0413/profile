@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap');
 
 :root {
-  /* --base: #ccd2cc;
-  --rgb: 204, 210, 204; */
-  --base: #b796a3;
-  --rgb: 183, 150, 163;
+  --base: #c1a3a3;
+  --rgb: 193, 163, 163;
+  --secondary: #886F6F;
+  /* --base: #b796a3;
+  --rgb: 183, 150, 163; */
 }
 /* change it back 25 May */
 
@@ -16,7 +17,7 @@ body {
   margin: 0PX;
   font-weight: 300;
   background: #F9F1F0;
-  color: #886F6F;
+  color: var(--secondary);
   font-family: "Gill Sans", sans-serif;
   line-height: 1.6;
   min-height: 100vh;
@@ -24,7 +25,8 @@ body {
 
 a {
   text-decoration: none;
-  color: #694E4E;
+  /* color: #694E4E; */
+  color: var(--secondary);
   text-shadow:  #00000010 1px 0 10px;
 }
 
@@ -43,11 +45,12 @@ a {
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 2.5px rgb(243 214 214 / 90%);
+  -webkit-text-stroke: 2.8px rgb(243 225 214);
 }
 
 .content h2:nth-child(2) {
-  color: #74444a;
+  /* color: #74444a; */
+  color: var(--secondary);
   animation: animate 4s ease-in-out infinite;
 }
 
@@ -116,6 +119,15 @@ nav {
   font-size: 20px;
   font-weight: 400;
   font-family: "Gill Sans", sans-serif;
+}
+
+.nav-links a:hover {
+  transition-duration: 0.6s;
+  color: var(--secondary);
+}
+
+.nav-links a:not(:hover) {
+  transition-duration: 0.6s;
 }
 
 .container{
@@ -324,7 +336,7 @@ h1 {
 }
 
 .card-trip h2 {
-  color: #886F6F;
+  color: var(--secondary);
   font-size: 24PX;
   margin: 10px 20px;
   font-weight: bold;
@@ -354,12 +366,12 @@ h1 {
 }
 
 .list-inline .icon-footer a:hover {
-  transition-duration: 1s;
-  color: #F9F1F0;
+  transition-duration: 0.6s;
 }
 
 .list-inline .icon-footer a:not(:hover) {
-  transition-duration: 1s;
+  transition-duration: 0.6s;
+  color: #F9F1F0;
 }
 
 .list-inline > li {
@@ -571,7 +583,7 @@ h1 {
 
   .skill-title {
     font: bold 60px Gill Sans;
-}
+  }
 }
 
 @media (max-width: 390px){
@@ -597,8 +609,8 @@ h1 {
   }
 
   .info p {
-  width: 300px;
-  margin: 16px auto;
+    width: 300px;
+    margin: 16px auto;
   }
 
   .card-description {
