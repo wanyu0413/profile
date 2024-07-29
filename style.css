@@ -30,67 +30,6 @@ a {
   text-shadow:  #00000010 1px 0 10px;
 }
 
-/* Name Title */
-.content {
-  position: relative;
-}
-
-.content h2 {
-  color: #fff;
-  font-size: 8em;
-  position: absolute;
-  transform: translate(40%, -50%);
-  font-family: 'Roboto', sans-serif;
-}
-
-.content h2:nth-child(1) {
-  color: transparent;
-  -webkit-text-stroke: 2.8px rgb(243 225 214);
-}
-
-.content h2:nth-child(2) {
-  /* color: #74444a; */
-  color: var(--secondary);
-  animation: animate 4s ease-in-out infinite;
-}
-
-@keyframes animate {
-  0%,
-  100% {
-    clip-path: polygon(
-      0% 45%,
-      16% 44%,
-      33% 50%,
-      54% 60%,
-      70% 61%,
-      84% 59%,
-      100% 52%,
-      100% 100%,
-      0% 100%
-    );
-  }
-
-  50% {
-    clip-path: polygon(
-      0% 60%,
-      15% 65%,
-      34% 66%,
-      51% 62%,
-      67% 50%,
-      84% 45%,
-      100% 46%,
-      100% 100%,
-      0% 100%
-    );
-  }
-}
-
-.banner{
-  background: var(--base);
-  padding-bottom: 40px;
-  /* border-bottom: 4px dashed rgba(255,255,255,.5); */
-}
-
 .container{
   width: 60%;
   margin: auto;
@@ -348,20 +287,21 @@ h1 {
 }
 
 /* flip-words */
-.waviy {
-  white-space: nowrap;
+.flip-name {
+  /* white-space: nowrap; */
   position: relative;
-  /* font-family: arial, serif; */
-  font-family: monospace;
-  font-weight: bold;
-  padding: 0px 16px;
+  font: bold 90px Gill Sans;
+  text-align: center;
+  padding: 46px 20px;
 }
-.waviy span {
+.flip-name span {
   position: relative;
   display: inline-block;
-  font-size: 35px;
-  color: #fff;
-/*   text-transform: uppercase; */
+  background-color: var(--secondary);
+  color: transparent;
+  text-shadow: 3px 3px 4px rgb(0 0 0 / 62%);
+  background-clip: text;
+  text-transform: uppercase;
   animation: flip 2s infinite;
   animation-delay: calc(.2s * var(--i))
 }
@@ -446,12 +386,6 @@ h1 {
   .icon-dash a {
     margin: 10px 13px;
   }
-
-  .content h2 {
-    left: 0;
-    font-size: 7em;
-    transform: translate(15%, -35%);
-  }
 }
 
 @media (max-width: 720px){
@@ -484,12 +418,6 @@ h1 {
     flex-wrap: wrap;
     margin: 0 auto;
   }
-
-  .content h2 {
-    left: 0;
-    font-size: 7em;
-    transform: translate(10%, -50%);
-  }
 }
 
 @media (max-width: 540px){
@@ -516,11 +444,6 @@ h1 {
   .info p {
     width: 350px;
     margin: 16px auto;
-  }
-
-  .content h2 {
-    font-size: 7em;
-    transform: translate(-15%, -50%);
   }
 
   .card-trip p {
@@ -577,12 +500,6 @@ h1 {
 
   .card-description {
     padding: 0px 40px;
-  }
-
-  .content h2 {
-    left: -1vw;
-    font-size: 7em;
-    transform: translate(-17%, -50%);
   }
 
   .card-trip p {
