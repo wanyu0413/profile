@@ -4,6 +4,7 @@
   --base: rgb(0 0 13);
   --rgb: 0, 0, 13;
   --secondary: #ff00ad;
+  --outline: #61dbfb
   /* --base: #c1a3a3;
   --rgb: 193, 163, 163;
   --secondary: #886F6F; */
@@ -33,26 +34,40 @@ a {
 .container{
   width: 60%;
   margin: auto;
+  text-align: center;
 }
 
-.info{
-  padding-top: 220px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+#hello-header {
+  padding-top: 90px;
+  margin: 0px auto;
+  font: bold 40px;
+  letter-spacing: 2.5px;
+  color: #fff;
 }
 
-.info p {
-  color: #F9F1F0;
-  margin: 16px auto;
-  font-weight: 400;
-  font-size: 20px;
-  width: 450px;
-  padding-left: 16px;
+/* flip-words */
+.flip-name {
+  /* white-space: nowrap; */
+  position: relative;
+  font: bold 90px Gill Sans;
+  padding: 46px 20px;
 }
-
+.flip-name span {
+  position: relative;
+  display: inline-block;
+  background-color: var(--secondary);
+  color: transparent;
+  text-shadow: 3px 3px 4px rgb(0 0 0 / 62%);
+  background-clip: text;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
+  }
+}
 .img-circle {
   border-radius: 56% 44% 34% 66% / 57% 60% 40% 43%;
   width: 240px;
@@ -60,25 +75,14 @@ a {
   box-shadow: 0 10px 30px rgba(0,0,0,.2);
   border: 6px solid rgba(255, 0, 173,.6);
   margin: 30px 0px;
-}
-
-.card-description{
-  padding: 30px 40px;
+  outline: 2px solid var(--outline);
+  outline-offset: 15px;
 }
 
 h1 {
   color: #F9F1F0;
   font-size: 40px;
   font-weight: bold;
-}
-
-#hello-header {
-  padding-top: 80px;
-  margin: 0px auto;
-  text-align: center;
-  font: bold 40px;
-  letter-spacing: 2.5px;
-  color: #fff;
 }
 
 /* button_in_cards */
@@ -286,31 +290,6 @@ h1 {
   margin: 0px;
 }
 
-/* flip-words */
-.flip-name {
-  /* white-space: nowrap; */
-  position: relative;
-  font: bold 90px Gill Sans;
-  text-align: center;
-  padding: 46px 20px;
-}
-.flip-name span {
-  position: relative;
-  display: inline-block;
-  background-color: var(--secondary);
-  color: transparent;
-  text-shadow: 3px 3px 4px rgb(0 0 0 / 62%);
-  background-clip: text;
-  text-transform: uppercase;
-  animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i))
-}
-@keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg)
-  }
-}
-
 /* skills section */
 .skills{
   margin: 30px auto 60px auto;
@@ -398,18 +377,6 @@ h1 {
     padding: 0px 30px;
   }
 
-  .info{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
-  }
-
-  .info p {
-    width: 300px;
-    margin: 16px auto;
-  }
-
   .card-trip p {
     margin: 10px 24px 180px 24px;
   }
@@ -432,18 +399,6 @@ h1 {
     grid-gap: 26px;
     margin: 30px auto;
     padding: 0px 30px;
-  }
-
-  .info{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-gap: 16px;
-  }
-
-  .info p {
-    width: 350px;
-    margin: 16px auto;
   }
 
   .card-trip p {
@@ -483,23 +438,6 @@ h1 {
     grid-gap: 26px;
     margin: 30px auto;
     padding: 0px 30px;
-  }
-
-  .info{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-gap: 16px;
-    margin-left: 0px;
-  }
-
-  .info p {
-    width: 300px;
-    margin: 16px auto;
-  }
-
-  .card-description {
-    padding: 0px 40px;
   }
 
   .card-trip p {
