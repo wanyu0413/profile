@@ -4,10 +4,7 @@
   --base: #c1a3a3;
   --rgb: 193, 163, 163;
   --secondary: #886F6F;
-  /* --base: #b796a3;
-  --rgb: 183, 150, 163; */
 }
-/* change it back 25 May */
 
 html,body{
   overflow-x: hidden;
