@@ -2,9 +2,9 @@
 @import url(//fonts.googleapis.com/css?family=Vibur);
 
 :root {
-  --base: rgb(0 0 13);
-  --rgb: 0, 0, 13;
-  --secondary: #ff00ad;
+  --base: rgb(33, 31, 32);
+  --primary: rgba(202, 96, 54, 1);
+  --secondary: rgba(3,123,133, 1);
 }
 
 html,
@@ -16,9 +16,8 @@ body {
 body {
   margin: 0px;
   font-weight: 300;
-  background: #f9f1f0;
   background: var(--base);
-  color: var(--secondary);
+  color: var(--primary);
   font-family: "Gill Sans", sans-serif;
   line-height: 1.6;
   min-height: 100vh;
@@ -26,22 +25,26 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--primary);
   text-shadow: #00000010 1px 0 10px;
 }
 
 .container {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 
 #hello-header {
   padding-top: 90px;
   margin: 0px auto;
-  font: bold 40px;
-  letter-spacing: 2.5px;
-  color: #fff;
+  text-transform: uppercase;
+  color: var(--secondary);
+  line-height: 1.6;
+  letter-spacing: 0.25em;
+  font-size: 37px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
 }
 
 /* flip-words */
@@ -83,7 +86,7 @@ a {
 
 .logo b {
   font: 400 16vh "Vibur";
-  color: #fee;
+  color: var(--primary);
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
 }
@@ -132,9 +135,9 @@ a {
   width: 240px;
   height: 240px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border: 6px solid rgba(255, 0, 173, 0.6);
+  border: 6px solid var(--primary);
   margin: 30px 0px;
-  outline: 1px solid #fff;
+  outline: 1px solid var(--secondary);
   outline-offset: 15px;
   opacity: 0.7;
 }
@@ -144,15 +147,16 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 50vh;
 }
 
 .guide-circle {
-  color: #fff;
+  color: var(--primary);
   height: 160px;
   width: 160px;
-  border: 1px solid white;
+  border: 6px solid var(--secondary);
   border-radius: 50%;
-  outline: 1px dashed rgb(245, 245, 245, 0.5);
+  outline: 1px dashed var(--primary);
   outline-offset: 10px;
   display: flex;
   justify-content: center;
@@ -409,10 +413,11 @@ h1 {
   background-color: var(--secondary);
   color: transparent;
   /* text-shadow: 3px 3px 4px rgba(255,255,255,0.5); */
-  text-shadow: 3px 3px 4px rgb(0 0 0 / 62%);
+  text-shadow: 3px 3px 4px rgb(27 15 15 / 61%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
+  text-transform: uppercase;
 }
 
 @media (max-width: 830px) {
