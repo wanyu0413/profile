@@ -407,15 +407,12 @@ h1 {
 .skill-title {
   margin-top: 80px;
   padding-top: 80px;
-  text-align: center;
-  /* font: bold 80px arial, sans-serif; */
-  font: bold 80px Gill Sans;
+  line-height: 1;
+  font-size: 62px;
+  text-align: left;
   background-color: var(--secondary);
   color: transparent;
-  /* text-shadow: 3px 3px 4px rgba(255,255,255,0.5); */
-  text-shadow: 3px 3px 4px rgb(27 15 15 / 61%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
+  text-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
   background-clip: text;
   text-transform: uppercase;
 }
