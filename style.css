@@ -5,6 +5,7 @@
   --base: rgb(33, 31, 32);
   --primary: rgba(202, 96, 54, 1);
   --secondary: rgba(3,123,133, 1);
+  --yellow: #d0b53f;
 }
 
 html,
@@ -162,6 +163,11 @@ a {
   justify-content: center;
   align-items: center;
   letter-spacing: 2px;
+}
+
+.guide-circle:hover {
+  background: var(--yellow);
+  transition: 1s;
 }
 
 h1 {
