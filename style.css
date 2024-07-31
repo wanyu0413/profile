@@ -4,7 +4,7 @@
 :root {
   --base: rgb(33, 31, 32);
   --primary: rgba(202, 96, 54, 1);
-  --secondary: rgba(3,123,133, 1);
+  --secondary: rgba(3, 123, 133, 1);
   --yellow: #d0b53f;
 }
 
@@ -152,6 +152,8 @@ a {
 }
 
 .guide-circle {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 18px;
   color: var(--primary);
   height: 160px;
   width: 160px;
@@ -167,7 +169,17 @@ a {
 
 .guide-circle:hover {
   background: var(--yellow);
-  transition: 1s;
+  transition: 0.5s;
+}
+
+.guide-circle:not(:hover) {
+  transition: 0.5s;
+}
+
+#typedtext {
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: 18px;
+  letter-spacing: 0.2em;
 }
 
 h1 {
@@ -423,7 +435,7 @@ h1 {
   z-index: 5;
 }
 
-div:has(>.left){
+div:has(> .left) {
   position: relative;
   margin-top: 220px;
   margin-left: 60px;
@@ -442,7 +454,7 @@ div:has(>.left){
   top: 75px;
 }
 
-div:has(>.right){
+div:has(> .right) {
   position: relative;
   margin-top: 220px;
 }
