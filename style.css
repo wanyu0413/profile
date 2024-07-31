@@ -420,18 +420,19 @@ div:has(>.left){
   position: relative;
   margin-top: 220px;
   margin-left: 60px;
-  padding: 50px 110px;
+  padding: 30px 50px;
   border: 2px solid;
   outline: 8px solid;
   outline-offset: 15px;
   width: 40%;
+  text-align: right;
 }
 
 .left {
   transform: rotate(270deg);
   position: absolute;
   left: -12vw;
-  top: 80px;
+  top: 75px;
 }
 
 div:has(>.right){
