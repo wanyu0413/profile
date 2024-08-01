@@ -239,7 +239,7 @@ div:has(> .right) {
   top: 0;
   left: -6px;
   color: var(--yellow);
-  text-shadow: 4px 4px rgb(0 0 0 / 55%);
+  text-shadow: 3px 4px rgb(0 0 0 / 55%);
 }
 
 .skills li:has(> .skill-item) {
@@ -254,7 +254,7 @@ div:has(> .right) {
   align-items: center;
   padding: 0px 18px;
   margin: 0;
-  border-left: 16px solid var(--secondary);
+  border-left: 16px solid var(--primary);
 }
 
 .skill-item img {
