@@ -147,7 +147,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-top: 50vh;
 }
 
@@ -170,13 +170,15 @@ a {
 .guide-circle:hover {
   background: var(--yellow);
   transition: 0.5s;
+  color: var(--secondary);
+  z-index: 5;
 }
 
 .guide-circle:not(:hover) {
   transition: 0.5s;
 }
 
-#typedtext {
+.about-me-content {
   font-family: 'Waiting for the Sunrise', cursive;
   font-size: 18px;
   letter-spacing: 0.2em;
@@ -395,27 +397,27 @@ h1 {
 
 /* skills section */
 .skills {
-  margin: 30px auto 60px auto;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 18px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li:has(> .skill-item) {
+  list-style: none;
 }
 
 .skill-item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 2px 18px;
-  border-radius: 50px;
+  padding: 0px 18px;
+  margin: 0;
   background-color: rgba(var(--rgb), 0.42);
-  border: 2.5px dotted #ffffff99;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  border-left: 16px solid var(--secondary);
 }
 
 .skills img {
-  width: 45px;
-  height: 45px;
+  margin: 0px 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .skill-item h2 {
@@ -435,11 +437,15 @@ h1 {
   z-index: 5;
 }
 
-div:has(> .left) {
+div:has(> #about-me) {
   position: relative;
   margin-top: 220px;
+  width: 100%;
+}
+
+.about-me-div {
   margin-left: 60px;
-  padding: 30px 50px;
+  padding: 20px 60px;
   border: 2px solid;
   outline: 8px solid;
   outline-offset: 15px;
@@ -450,8 +456,8 @@ div:has(> .left) {
 .left {
   transform: rotate(270deg);
   position: absolute;
-  left: -12vw;
-  top: 75px;
+  left: -8vw;
+  top: 82px;
 }
 
 div:has(> .right) {
@@ -473,12 +479,6 @@ div:has(> .right) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
     padding: 0px 30px;
-  }
-
-  .img-circle {
-    border-radius: 56% 44% 34% 66% / 57% 60% 40% 43%;
-    width: 150px;
-    height: 150px;
   }
 
   div:has(> .img-circle) {
