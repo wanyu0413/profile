@@ -2,7 +2,7 @@
 let aText = new Array(
     "WEB DEVELOPER.", 
     );
-    let iSpeed = 200; // time delay of print out
+    let iSpeed = 350; // time delay of print out
     let iIndex = 0; // start printing array at this posision
     let iArrLength = aText[0].length; // the length of the text array
     let iScrollAt = 20; // start scrolling up at this many lines

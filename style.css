@@ -185,7 +185,6 @@ a {
 }
 
 h1 {
-  color: #f9f1f0;
   font-size: 40px;
   font-weight: bold;
 }
@@ -398,7 +397,7 @@ h1 {
 /* skills section */
 .skills {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 li:has(> .skill-item) {
