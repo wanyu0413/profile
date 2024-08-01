@@ -30,6 +30,11 @@ a {
   text-shadow: #00000010 1px 0 10px;
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -152,7 +157,7 @@ a {
 }
 
 .guide-circle {
-  font-family: 'Waiting for the Sunrise', cursive;
+  font-family: "Waiting for the Sunrise", cursive;
   font-size: 18px;
   color: var(--primary);
   height: 160px;
@@ -179,14 +184,88 @@ a {
 }
 
 .about-me-content {
-  font-family: 'Waiting for the Sunrise', cursive;
+  font-family: "Waiting for the Sunrise", cursive;
   font-size: 18px;
   letter-spacing: 0.2em;
 }
 
-h1 {
-  font-size: 40px;
-  font-weight: bold;
+div:has(> .left) {
+  position: relative;
+  margin-top: 220px;
+  width: 100%;
+}
+
+.about-me-div {
+  margin-left: 60px;
+  padding: 20px 60px;
+  border: 2px solid;
+  outline: 8px solid;
+  outline-offset: 15px;
+  width: 40%;
+  text-align: right;
+}
+
+.left {
+  transform: rotate(270deg);
+  position: absolute;
+  left: -8vw;
+  top: 82px;
+}
+
+div:has(> .right) {
+  position: relative;
+  margin-top: 220px;
+  width: 100%;
+}
+
+.right {
+  transform: rotate(90deg);
+  position: absolute;
+  right: -8vw;
+  top: 100px;
+}
+
+/* skills section */
+.skills {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.skills li:has(> .skill-item) {
+  list-style: none;
+}
+
+.skill-item {
+  font-family: "Waiting for the Sunrise", cursive;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px;
+  margin: 0;
+  border-left: 16px solid var(--secondary);
+}
+
+.skill-item img {
+  margin: 0px 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.skill-item h2 {
+  font-size: 20px;
+}
+
+.skill-title {
+  margin: 0;
+  line-height: 1;
+  font-size: 58px;
+  text-align: left;
+  background-color: var(--secondary);
+  color: transparent;
+  text-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
+  background-clip: text;
+  text-transform: uppercase;
+  z-index: 5;
 }
 
 /* button_in_cards */
@@ -392,83 +471,6 @@ h1 {
   list-style: none;
   padding-left: 0px;
   margin: 0px;
-}
-
-/* skills section */
-.skills {
-  display: flex;
-  justify-content: flex-end;
-}
-
-li:has(> .skill-item) {
-  list-style: none;
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  padding: 0px 18px;
-  margin: 0;
-  background-color: rgba(var(--rgb), 0.42);
-  border-left: 16px solid var(--secondary);
-}
-
-.skills img {
-  margin: 0px 10px;
-  width: 30px;
-  height: 30px;
-}
-
-.skill-item h2 {
-  font-size: 20px;
-}
-
-.skill-title {
-  margin: 0;
-  line-height: 1;
-  font-size: 58px;
-  text-align: left;
-  background-color: var(--secondary);
-  color: transparent;
-  text-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
-  background-clip: text;
-  text-transform: uppercase;
-  z-index: 5;
-}
-
-div:has(> #about-me) {
-  position: relative;
-  margin-top: 220px;
-  width: 100%;
-}
-
-.about-me-div {
-  margin-left: 60px;
-  padding: 20px 60px;
-  border: 2px solid;
-  outline: 8px solid;
-  outline-offset: 15px;
-  width: 40%;
-  text-align: right;
-}
-
-.left {
-  transform: rotate(270deg);
-  position: absolute;
-  left: -8vw;
-  top: 82px;
-}
-
-div:has(> .right) {
-  position: relative;
-  margin-top: 220px;
-}
-
-.right {
-  transform: rotate(90deg);
-  position: absolute;
-  right: -8vw;
-  top: 100px;
 }
 
 @media (max-width: 830px) {
