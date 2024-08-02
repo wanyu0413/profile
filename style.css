@@ -513,10 +513,6 @@ div:has(> .right) {
     padding: 0px 30px;
   }
 
-  div:has(> .img-circle) {
-    margin: 0 auto;
-  }
-
   .card-trip p {
     margin: 10px 24px 180px 24px;
   }
@@ -552,8 +548,21 @@ div:has(> .right) {
 }
 
 @media (max-width: 540px) {
+  .logo {
+    width: 100%;
+    height: 25vh;
+  }
+  
+  .logo b {
+    font: 400 10vh "Vibur";
+  }
+  
   .about-me-div {
     text-align: left;
+  }
+
+  .center-circles {
+    flex-direction: column;
   }
 
   .skills {
@@ -566,33 +575,6 @@ div:has(> .right) {
 
   .right {
     top: 200px;
-  }
-
-  -------------
-
-  div:has(> .img-circle) {
-    margin: 0 auto;
-  }
-
-  /* .cards {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-gap: 26px;
-    margin: 30px auto;
-    padding: 0px 30px;
-  } */
-
-  .card-trip p {
-    margin: 10px 24px 100px 24px;
-  }
-
-  .icon-dash-flex {
-    margin: 0 auto;
-  }
-
-  .skill-item h2 {
-    font-size: 18px;
   }
 }
 
