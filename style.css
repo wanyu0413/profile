@@ -23,7 +23,7 @@ body {
   /* font-family: "Gill Sans", sans-serif; */
   font-family: 'Echomotors Demo', sans-serif;
   letter-spacing: 0.25em;
-  line-height: 1.6;
+  line-height: 1.5em;
   min-height: 100vh;
 }
 
@@ -48,7 +48,7 @@ h1 {
   margin: 0px auto;
   text-transform: uppercase;
   color: var(--secondary);
-  line-height: 1.6;
+  line-height: 1.6em;
   letter-spacing: 0.25em;
   font-size: 37px;
   font-weight: bold;
@@ -190,7 +190,7 @@ h1 {
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 18px;
   letter-spacing: 0.3em;
-  line-height: 1.8;
+  line-height: 1.8em;
 }
 
 div:has(> .left, > .left-2) {
@@ -213,7 +213,7 @@ div:has(> .left, > .left-2) {
   transform: rotate(270deg);
   position: absolute;
   text-align: left;
-  left: -14.5vw;
+  left: -186px;
   top: 80px;
 }
 
@@ -221,7 +221,7 @@ div:has(> .left, > .left-2) {
   transform: rotate(270deg);
   position: absolute;
   text-align: left;
-  left: -5.55vw;
+  left: -72px;
   top: 75px;
 }
 
@@ -235,8 +235,8 @@ div:has(> .right) {
   transform: rotate(90deg);
   position: absolute;
   text-align: right;
-  right: -9.5vw;
-  top: 100px;
+  right: -122px;
+  top: 140px;
 }
 
 /* skills section */
@@ -282,14 +282,14 @@ div:has(> .right) {
   /* font-style: normal; */
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.5em;
   letter-spacing: 0.3em;
   margin: 10px 0px;
 }
 
 .skill-title {
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-size: 58px;
   color: var(--secondary);
   text-transform: uppercase;
@@ -552,18 +552,36 @@ div:has(> .right) {
 }
 
 @media (max-width: 540px) {
+  .about-me-div {
+    text-align: left;
+  }
+
+  .skills {
+    display: block;
+  }
+
+  .skills li:has(> .skill-item) {
+    margin-top: 16px;
+  }
+
+  .right {
+    top: 200px;
+  }
+
+  -------------
+
   div:has(> .img-circle) {
     margin: 0 auto;
   }
 
-  .cards {
+  /* .cards {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-gap: 26px;
     margin: 30px auto;
     padding: 0px 30px;
-  }
+  } */
 
   .card-trip p {
     margin: 10px 24px 100px 24px;
@@ -573,20 +591,8 @@ div:has(> .right) {
     margin: 0 auto;
   }
 
-  .skills {
-    margin: 30px auto 60px auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
-  }
-
   .skill-item h2 {
     font-size: 18px;
-  }
-
-  .skill-title {
-    font: bold 60px Gill Sans;
   }
 }
 
