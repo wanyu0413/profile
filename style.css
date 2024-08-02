@@ -1,5 +1,6 @@
-@import url(//fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Serif:opsz,wght@8..144,100;8..144,300&display=swap);
 @import url(//fonts.googleapis.com/css?family=Vibur);
+@import url('https://fonts.cdnfonts.com/css/echomotors-demo');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;400&display=swap');
 
 :root {
   --base: rgb(33, 31, 32);
@@ -19,7 +20,9 @@ body {
   font-weight: 300;
   background: var(--base);
   color: var(--primary);
-  font-family: "Gill Sans", sans-serif;
+  /* font-family: "Gill Sans", sans-serif; */
+  font-family: 'Echomotors Demo', sans-serif;
+  letter-spacing: 0.25em;
   line-height: 1.6;
   min-height: 100vh;
 }
@@ -186,10 +189,11 @@ h1 {
 .about-me-content {
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 18px;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.3em;
+  line-height: 1.8;
 }
 
-div:has(> .left) {
+div:has(> .left, > .left-2) {
   position: relative;
   margin-top: 220px;
   width: 100%;
@@ -208,8 +212,17 @@ div:has(> .left) {
 .left {
   transform: rotate(270deg);
   position: absolute;
-  left: -8vw;
-  top: 82px;
+  text-align: left;
+  left: -14.5vw;
+  top: 80px;
+}
+
+.left-2 {
+  transform: rotate(270deg);
+  position: absolute;
+  text-align: left;
+  left: -5.55vw;
+  top: 75px;
 }
 
 div:has(> .right) {
@@ -221,7 +234,8 @@ div:has(> .right) {
 .right {
   transform: rotate(90deg);
   position: absolute;
-  right: -8vw;
+  text-align: right;
+  right: -9.5vw;
   top: 100px;
 }
 
@@ -249,7 +263,6 @@ div:has(> .right) {
 }
 
 .skill-item {
-  font-family: "Waiting for the Sunrise", cursive;
   display: flex;
   align-items: center;
   padding: 0px 18px;
@@ -264,20 +277,27 @@ div:has(> .right) {
 }
 
 .skill-item h2 {
+  font-family: "Waiting for the Sunrise", cursive;
+  /* font-family: "Bebas Neue", sans-serif; */
+  /* font-style: normal; */
+  font-weight: 400;
   font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.3em;
+  margin: 10px 0px;
 }
 
 .skill-title {
   margin: 0;
-  line-height: 1;
+  line-height: 1.2;
   font-size: 58px;
-  text-align: left;
-  background-color: var(--secondary);
-  color: transparent;
-  text-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
-  background-clip: text;
+  color: var(--secondary);
   text-transform: uppercase;
   z-index: 5;
+  /* background-color: var(--secondary);
+  color: transparent;
+  text-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
+  background-clip: text; */
 }
 
 /* button_in_cards */
