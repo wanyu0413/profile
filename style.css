@@ -592,47 +592,8 @@ div:has(> .right) {
   .right {
     top: 200px;
   }
-}
 
-@media (max-width: 390px) {
-  div:has(> .img-circle) {
-    margin: 0 auto;
-  }
-
-  .cards {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-gap: 26px;
-    margin: 30px auto;
-    padding: 0px 30px;
-  }
-
-  .card-trip p {
-    margin: 10px 24px 100px 24px;
-  }
-
-  .skills {
-    margin: 30px auto 60px auto;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
-  }
-
-  .skill-title {
-    font: bold 60px Gill Sans;
-  }
-
-  .skill-item h2 {
-    font-size: 18px;
-  }
-
-  .btn-53 {
-    font-weight: 600;
-  }
-
-  .btn-53 .letters {
-    padding: 0.8rem 1rem;
+  .left {
+    top: 220px;
   }
 }
