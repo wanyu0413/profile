@@ -1,18 +1,20 @@
 @import url(//fonts.googleapis.com/css?family=Vibur);
-@import url('https://fonts.cdnfonts.com/css/echomotors-demo');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;400&display=swap');
+@import url("https://fonts.cdnfonts.com/css/echomotors-demo");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;400&display=swap");
 
 :root {
   --base: rgb(33, 31, 32);
   --primary: rgba(202, 96, 54, 1);
   --secondary: rgba(3, 123, 133, 1);
   --yellow: #d0b53f;
+  --bg-color: #eee;
+  --body-w: 800px;
 }
 
 html,
 body {
   overflow-x: hidden;
-  /* height:100% */
+  min-width: var(--body-w);
 }
 
 body {
@@ -21,7 +23,7 @@ body {
   background: var(--base);
   color: var(--primary);
   /* font-family: "Gill Sans", sans-serif; */
-  font-family: 'Echomotors Demo', sans-serif;
+  font-family: "Echomotors Demo", sans-serif;
   letter-spacing: 0.25em;
   line-height: 1.5em;
   min-height: 100vh;
@@ -406,6 +408,163 @@ div:has(> .right) {
   transition-delay: 0.7s;
 }
 
+/* img leaning */
+.images-leaning {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: var(--body-w);
+  margin: 10em auto 0;
+  min-height: 330px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 32.4em;
+  background-position: 50% 100%;
+}
+
+.images-leaning > div {
+  width: 350px;
+  position: absolute;
+  left: 55%;
+  bottom: 7.8em;
+  z-index: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.images-leaning > div:before {
+  content: "";
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 7%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      120deg,
+      transparent 42%,
+      rgba(0, 0, 0, 0.15) 45%,
+      rgba(0, 0, 0, 0.35) 65%
+    ),
+    linear-gradient(
+      20deg,
+      transparent 38%,
+      rgba(0, 0, 0, 0.25) 45%,
+      rgba(0, 0, 0, 0.23) 55%,
+      rgba(0, 0, 0, 0.13) 75%
+    ),
+    radial-gradient(
+      ellipse at 50% 100%,
+      rgba(0, 0, 0, 0.15) 3%,
+      transparent 40%
+    );
+  transform: rotate(-8deg);
+}
+
+.images-leaning > div:after {
+  content: "";
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3), transparent 70%),
+    linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.3) 80%
+    );
+  transform: perspective(20em) rotateY(1deg) rotateZ(-5deg) skewY(-2deg) skewX(-1deg) scaleX(var(--resize));
+}
+
+.images-leaning > div > img {
+  width: 60%;
+  height: 100%;
+  display: block;
+  position: relative;
+  z-index: 2;
+  border-left: 0.2em solid;
+  border-image: linear-gradient(105deg, transparent 0.5%, #aaa 0.7%) 1;
+  box-shadow: 0.1em 0.2em 0 -0.1em #666;
+  filter: saturate(90%);
+  transform: perspective(20em) rotateY(1deg) rotateZ(-5deg) skewY(-2deg) skewX(-1deg) scaleX(var(--resize));
+}
+
+.images-leaning > div:nth-of-type(4) {
+  --resize: 0.99;
+  margin-left: -40.4em;
+}
+
+.images-leaning > div:nth-of-type(4):before {
+  background-size: 100% 85%, 100% 15%, 100% 10%;
+  background-position: 0.1em 0, 0 100%, -3em 83%;
+}
+
+.images-leaning > div:nth-of-type(3) {
+  --resize: 0.96;
+  margin-left: -15.3em;
+  transform: scaleY(0.98) translate(-8em, -2.1em);
+}
+
+.images-leaning > div:nth-of-type(3):before {
+  background-size: 100% 84%, 100% 16%, 100% 10%;
+  background-position: 0.4em 0, 0 100%, -3em 81%;
+}
+
+.images-leaning > div:nth-of-type(2) {
+  --resize: 0.925;
+  margin-left: 10em;
+  transform: scaleY(0.965) translate(-17em, -4.2em);
+}
+
+.images-leaning > div:nth-of-type(2):before {
+  background-size: 100% 83%, 100% 17%, 100% 10%;
+  background-position: 0.6em 0, 0.1em 100%, -3em 81%;
+}
+
+.images-leaning > div:nth-of-type(1) {
+  --resize: 0.895;
+  margin-left: 35.2em;
+  transform: scaleY(0.94) translate(-26.6em, -6.2em);
+}
+
+.images-leaning > div:nth-of-type(1):before {
+  background-size: 100% 82%, 100% 18%, 100% 10%;
+  background-position: 0.8em 0, 0.1em 100%, -3em 80%;
+}
+
+/* html,
+body {
+  min-height: 100vh;
+  min-width: var(--body-w);
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  font-size: 10px;
+} */
+
+.images-basic {
+  width: 600px;
+  padding: 5em 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.images-basic > div {
+  width: 130px;
+}
+
+.images-basic img {
+  width: 100%;
+  display: block;
+}
 /* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
 .icon-dash-flex {
   box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.2);
@@ -567,7 +726,7 @@ div:has(> .right) {
     width: 160px;
     height: 160px;
   }
-  
+
   .about-me-div {
     text-align: left;
   }
