@@ -14,7 +14,6 @@
 html,
 body {
   overflow-x: hidden;
-  min-width: var(--body-w);
 }
 
 body {
@@ -584,22 +583,6 @@ div:has(> .right) {
   background-size: cover;
 }
 
-/* html,
-body {
-  min-height: 100vh;
-  min-width: var(--body-w);
-}
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--bg-color);
-  font-size: 10px;
-} */
-
 .images-basic {
   width: 600px;
   padding: 5em 0;
@@ -715,49 +698,6 @@ body {
   margin: 0px;
 }
 
-@media (max-width: 830px) {
-  .cards {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-    padding: 0px 30px;
-  }
-
-  .card-trip p {
-    margin: 10px 24px 180px 24px;
-  }
-
-  .icon-dash-flex {
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-
-  .icon-dash a {
-    margin: 10px 13px;
-  }
-}
-
-@media (max-width: 720px) {
-  .cards {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
-    margin: 30px auto;
-    padding: 0px 30px;
-  }
-
-  .card-trip p {
-    margin: 10px 24px 180px 24px;
-  }
-
-  .icon-dash-flex {
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 540px) {
   .logo {
     width: 100%;
@@ -811,5 +751,9 @@ body {
   .images-leaning {
     overflow-x: auto;
     min-width: 100%;
+  }
+
+  .images-leaning > div {
+    left: 163%;
   }
 }
