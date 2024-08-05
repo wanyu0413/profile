@@ -807,4 +807,9 @@ body {
   .left {
     top: 220px;
   }
+
+  .images-leaning {
+    overflow-x: auto;
+    min-width: 100%;
+  }
 }
