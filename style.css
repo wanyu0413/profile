@@ -599,6 +599,11 @@ div:has(> .right) {
   backdrop-filter: blur(8px);
   border-radius: 20px;
   border: 2px solid var(--primary);
+  display: none;
+}
+
+.popup.active {
+  display: block;
 }
 
 /* Footer */
