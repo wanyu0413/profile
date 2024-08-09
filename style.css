@@ -593,8 +593,9 @@ div:has(> .right) {
   height: 500px;
   width: 660px;
   position: fixed;
-  top: 12vh;
-  left: 22vw;
+  top: 10vh;
+  left: 20vw;
+  padding: 25px 35px;
   background-color: rgba(var(--rgb-base), 0.5);
   backdrop-filter: blur(8px);
   border-radius: 20px;
@@ -605,6 +606,22 @@ div:has(> .right) {
 
 .popup.active {
   display: block; /* Show the overlay when active */
+}
+
+.popup h2 {
+  font-size: 2em;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.popup p {
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  font-size: 22px;
+  text-align: justify;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .overlay {
@@ -714,7 +731,12 @@ div:has(> .right) {
   }
 
   .popup {
-    left: 10vw;
-    width: 80vw;
+    left: 7vw;
+    width: 70vw;
+    height: fit-content;
+  }
+
+  .popup h2 {
+    font-size: 1.8em;
   }
 }
