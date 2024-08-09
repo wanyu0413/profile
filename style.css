@@ -57,29 +57,6 @@ h1 {
   text-align: center;
 }
 
-/* flip-words */
-/* .flip-name {
-  position: relative;
-  font: bold 90px Gill Sans;
-  padding: 46px 20px;
-}
-.flip-name span {
-  position: relative;
-  display: inline-block;
-  background-color: var(--secondary);
-  color: transparent;
-  text-shadow: 3px 3px 4px rgb(0 0 0 / 62%);
-  background-clip: text;
-  text-transform: uppercase;
-  animation: flip 2s infinite;
-  animation-delay: calc(.2s * var(--i))
-}
-@keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg)
-  }
-} */
-
 .logo {
   text-align: center;
   width: 65%;
