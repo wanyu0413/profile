@@ -18,3 +18,11 @@ triggers.forEach(trigger => {
 const overlay = document.createElement('div');
 overlay.classList.add('overlay'); 
 document.body.appendChild(overlay);
+
+overlay.addEventListener('click', function() {
+    const popups = document.querySelectorAll('.popup.active');
+    popups.forEach( popup => {
+        popup.classList.remove('active');
+    });
+    overlay.classList.remove('active');
+});
