@@ -4,8 +4,11 @@
 
 :root {
   --base: rgb(33, 31, 32);
+  --rgb-base: 33, 31, 32;
   --primary: rgba(202, 96, 54, 1);
+  --rgb-primary: 202, 96, 54;
   --secondary: rgba(3, 123, 133, 1);
+  --rgb-secondary: 3, 123, 133;
   --yellow: #d0b53f;
   --bg-color: #eee;
   --body-w: 800px;
@@ -585,57 +588,17 @@ div:has(> .right) {
   margin: 0 auto;
 }
 
-/* cards */
-.cards {
-  margin: 30px auto;
-  padding: 0px 60px;
-  display: grid;
-  justify-content: center;
-  justify-self: center;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
-  max-width: 1400px;
-}
-
-.card-trip {
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-trip > img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  border-bottom: 4px solid rgba(var(--rgb), 0.49);
-}
-
-.card-trip h2 {
-  color: var(--secondary);
-  font-size: 24px;
-  margin: 10px 20px;
-  font-weight: bold;
-}
-
-.card-content > * {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-trip p {
-  font-size: 18px;
-  font-weight: 300;
-  opacity: 0.88;
-  margin: 10px 24px 100px 24px;
+/* Pop up */
+.popup {
+  height: 500px;
+  width: 660px;
+  position: fixed;
+  top: 12vh;
+  left: 22vw;
+  background-color: rgba(var(--rgb-base), 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 2px solid var(--primary);
 }
 
 /* Footer */
@@ -727,5 +690,10 @@ div:has(> .right) {
 
   .images-leaning > div {
     left: 650px;
+  }
+
+  .popup {
+    left: 10vw;
+    width: 80vw;
   }
 }
