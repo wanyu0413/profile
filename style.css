@@ -655,7 +655,6 @@ div:has(> .right) {
 }
 .img-gallery::-webkit-scrollbar {
   height: 10px;
-  margin-top: ;
 }
 .img-gallery::-webkit-scrollbar-track {
   background-color: var(--base);
@@ -808,9 +807,12 @@ div:has(> .right) {
   }
 
   .popup {
-    left: 8.5vw;
-    width: 70vw;
-    height: fit-content;
+    left: 9vw;
+    width: 68vw;
+    height: 80vh;
+  }
+  .popup::-webkit-scrollbar {
+    display: none;
   }
 
   .popup h2 {
