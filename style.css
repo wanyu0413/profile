@@ -530,10 +530,10 @@ div:has(> .right) {
 }
 
 .images-leaning > div:nth-of-type(2) > .project-img {
-  background-image: url(images/Movie-list.png);
+  background-image: url(images/Woof.jpg);
   height: 100%;
   /* Center and scale the image nicely */
-  background-position: 0% 20%;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -550,10 +550,10 @@ div:has(> .right) {
 }
 
 .images-leaning > div:nth-of-type(1) > .project-img {
-  background-image: url(images/Woof.jpg);
+  background-image: url(images/Movie-list.png);
   height: 100%;
   /* Center and scale the image nicely */
-  background-position: top;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
 }
