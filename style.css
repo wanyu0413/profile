@@ -582,7 +582,7 @@ div:has(> .right) {
   width: 660px;
   position: fixed;
   top: 8vh;
-  left: 18vw;
+  left: 17.5vw;
   padding: 3.5% 5%;
   background-color: rgba(var(--rgb-base), 0.5);
   backdrop-filter: blur(8px);
@@ -648,7 +648,7 @@ div:has(> .right) {
 .img-gallery {
   height: fit-content;
   width: 100%;
-  margin-bottom: 18px;
+  margin-bottom: 23px;
   padding-bottom: 12px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -672,16 +672,15 @@ div:has(> .right) {
   justify-content: center;
 }
 
-.img-gallery .app-img {
+/* Images of binfind */
+.app-imgs .app-img-binfind {
   width: 200px;
   height: 430px;
   margin-right: 18px;
 }
-
-.img-gallery .app-img:nth-last-child(1) {
+.app-img-binfind:nth-last-child(1) {
   margin-right: 0;
 }
-
 #binfind-landing {
   background: url(images/Binfind/binfind1.jpg) no-repeat center center/cover;
 }
@@ -697,6 +696,26 @@ div:has(> .right) {
 #binfind-nightmode {
   background: url(images/Binfind/binfind5.jpg) no-repeat center center/cover;
 }
+
+/* Images of city2table */
+.app-imgs .app-img-city2table {
+  width: 412px;
+  height: 231px;
+  margin-right: 18px;
+}
+.app-img-city2table:nth-last-child(1) {
+  margin-right: 0;
+}
+#city2table-landing {
+  background: url(images/City2table/city2table1.png) no-repeat top center/cover;
+}
+#city2table-order {
+  background: url(images/City2table/city2table2.jpg) no-repeat center center/cover;
+}
+#city2table-create {
+  background: url(images/City2table/city2table3.jpg) no-repeat center center/cover;
+}
+
 
 .btn-view-code {
   background-color: var(--secondary);
@@ -826,4 +845,9 @@ div:has(> .right) {
     width: 74%;
     text-align: left;
   }
+
+  /* .app-imgs .app-img-city2table {
+    width: 364px;
+    height: 204px;
+  } */
 }
