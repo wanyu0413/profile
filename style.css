@@ -808,8 +808,8 @@ div:has(> .right) {
   }
 
   .popup {
-    left: 7vw;
-    width: 73vw;
+    left: 8.5vw;
+    width: 70vw;
     height: fit-content;
   }
 
