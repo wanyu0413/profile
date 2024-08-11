@@ -811,6 +811,8 @@ div:has(> .right) {
     width: 68vw;
     height: 80vh;
     padding: 7.5% 6%;
+    background-color: rgba(var(--rgb-base), 0.5);
+    backdrop-filter: blur(8px);
   }
   .popup::-webkit-scrollbar {
     display: none;
