@@ -581,9 +581,9 @@ div:has(> .right) {
   height: 500px;
   width: 660px;
   position: fixed;
-  top: 10vh;
-  left: 20vw;
-  padding: 25px 35px;
+  top: 8vh;
+  left: 18vw;
+  padding: 3.5% 5%;
   background-color: rgba(var(--rgb-base), 0.5);
   backdrop-filter: blur(8px);
   border-radius: 0px;
@@ -591,6 +591,19 @@ div:has(> .right) {
   text-align: center;
   display: none; /* Hide the overlay by default */
   z-index: 1000;
+}
+
+.popup::-webkit-scrollbar {
+  width: 10px;
+}
+.popup::-webkit-scrollbar-track {
+  background-color: var(--base);
+  border: 1px solid var(--secondary);
+  border-radius: 2px;
+}
+.popup::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--secondary);
 }
 
 .popup.active {
@@ -635,12 +648,14 @@ div:has(> .right) {
 .img-gallery {
   height: fit-content;
   width: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
   overflow-x: auto;
   overflow-y: hidden;
 }
 .img-gallery::-webkit-scrollbar {
-  width: 1px;
+  height: 10px;
+  margin-top: ;
 }
 .img-gallery::-webkit-scrollbar-track {
   background-color: var(--base);
@@ -651,21 +666,17 @@ div:has(> .right) {
   border-radius: 2px;
   background-color: var(--primary);
 }
-.img-gallery::-webkit-scrollbar-thumb:hover {
-  background-color: var(--yellow);
-}
 
 .app-imgs {
   width: fit-content;
   display: flex;
   justify-content: center;
-  margin-bottom: 12px;
 }
 
 .img-gallery .app-img {
   width: 200px;
   height: 430px;
-  margin-right: 16px;
+  margin-right: 18px;
 }
 
 .img-gallery .app-img:nth-last-child(1) {
@@ -798,7 +809,7 @@ div:has(> .right) {
 
   .popup {
     left: 7vw;
-    width: 70vw;
+    width: 73vw;
     height: fit-content;
   }
 
