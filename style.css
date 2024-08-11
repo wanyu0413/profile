@@ -807,9 +807,10 @@ div:has(> .right) {
   }
 
   .popup {
-    left: 9vw;
+    left: 8vw;
     width: 68vw;
     height: 80vh;
+    padding: 7.5% 6%;
   }
   .popup::-webkit-scrollbar {
     display: none;
