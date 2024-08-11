@@ -809,7 +809,7 @@ div:has(> .right) {
   .popup {
     left: 8vw;
     width: 68vw;
-    height: 60vh;
+    height: 70vh;
     padding: 7.5% 6%;
     background-color: rgba(var(--rgb-base), 0.5);
     backdrop-filter: blur(8px);
