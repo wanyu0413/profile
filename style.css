@@ -818,4 +818,9 @@ div:has(> .right) {
   .popup h2 {
     font-size: 1.8em;
   }
+
+  .popup p {
+    width: 74%;
+    text-align: left;
+  }
 }
