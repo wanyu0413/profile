@@ -672,6 +672,10 @@ div:has(> .right) {
   justify-content: center;
 }
 
+.app-imgs:has(> #watch-list-landing) {
+  width: 100%;
+}
+
 /* Images of binfind */
 .app-imgs .app-img-binfind {
   width: 200px;
@@ -698,7 +702,8 @@ div:has(> .right) {
 }
 
 /* Images of city2table & Watch-list */
-.app-imgs .app-img-city2table, .app-imgs .app-img-watch-list {
+.app-imgs .app-img-city2table,
+.app-imgs .app-img-watch-list {
   width: 412px;
   height: 231px;
   margin-right: 18px;
@@ -710,16 +715,17 @@ div:has(> .right) {
   background: url(images/City2table/city2table1.png) no-repeat top center/cover;
 }
 #city2table-order {
-  background: url(images/City2table/city2table2.jpg) no-repeat center center/cover;
+  background: url(images/City2table/city2table2.jpg) no-repeat center
+    center/cover;
 }
 #city2table-create {
-  background: url(images/City2table/city2table3.jpg) no-repeat center center/cover;
+  background: url(images/City2table/city2table3.jpg) no-repeat center
+    center/cover;
 }
 
 #watch-list-landing {
   background: url(images/Movie-list.png) no-repeat center center/cover;
 }
-
 
 .btn-view-code {
   background-color: var(--secondary);
