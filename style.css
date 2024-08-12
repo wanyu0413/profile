@@ -697,8 +697,8 @@ div:has(> .right) {
   background: url(images/Binfind/binfind5.jpg) no-repeat center center/cover;
 }
 
-/* Images of city2table */
-.app-imgs .app-img-city2table {
+/* Images of city2table & Watch-list */
+.app-imgs .app-img-city2table, .app-imgs .app-img-watch-list {
   width: 412px;
   height: 231px;
   margin-right: 18px;
@@ -714,6 +714,10 @@ div:has(> .right) {
 }
 #city2table-create {
   background: url(images/City2table/city2table3.jpg) no-repeat center center/cover;
+}
+
+#watch-list-landing {
+  background: url(images/Movie-list.png) no-repeat center center/cover;
 }
 
 
