@@ -735,6 +735,15 @@ div:has(> .right) {
   background: url(images/Movie-list.png) no-repeat center center/cover;
 }
 
+.app-imgs .app-img-woof {
+  width: 200px;
+  margin-right: 18px;
+}
+
+#woof-case-study {
+  background: url(images/Woof/Woof-case-study.jpg) no-repeat center center/cover;
+}
+
 .btn-view-code {
   background-color: var(--secondary);
   color: var(--base);
