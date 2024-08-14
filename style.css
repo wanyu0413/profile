@@ -648,6 +648,19 @@ div:has(> .right) {
   display: block; /* Show the overlay when active */
 }
 
+.content-uiux {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.img-gallery-uiux {
+  height: 500px;
+  width: fit-content;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .img-gallery {
   height: fit-content;
   width: 100%;
@@ -735,13 +748,10 @@ div:has(> .right) {
   background: url(images/Movie-list.png) no-repeat center center/cover;
 }
 
-.app-imgs .app-img-woof {
-  width: 200px;
-  margin-right: 18px;
-}
-
 #woof-case-study {
-  background: url(images/Woof/Woof-case-study.jpg) no-repeat center center/cover;
+  background: url(images/Woof/Woof-case-study.jpg) no-repeat top center/cover;
+  width: 300px;
+  height: 7122px;
 }
 
 .btn-view-code {
