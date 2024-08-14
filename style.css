@@ -584,7 +584,7 @@ div:has(> .right) {
 
 /* Pop up */
 .popup {
-  height: 555px;
+  height: 533px;
   width: 660px;
   position: fixed;
   top: 50px;
@@ -604,10 +604,10 @@ div:has(> .right) {
 }
 .popup::-webkit-scrollbar-track {
   background-color: var(--base);
-  border: 1px solid var(--secondary);
+  border: 1.5px solid var(--secondary);
   border-left-color: var(--yellow);
   border-left-style: dashed;
-  border-left-width: 1.5px;
+  border-left-width: 2px;
   border-radius: 2px;
 }
 .popup::-webkit-scrollbar-thumb {
@@ -654,43 +654,6 @@ div:has(> .right) {
   display: block; /* Show the overlay when active */
 }
 
-.content-uiux {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.content-uiux > div, .content-uiux > div > p {
-  width: 100%;
-}
-
-.img-gallery-uiux {
-  height: 500px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin-left: 18px;
-}
-
-.img-gallery-uiux::-webkit-scrollbar {
-  width: 10px;
-}
-
-.img-gallery-uiux::-webkit-scrollbar-track {
-  background-color: var(--base);
-  border: 1px solid var(--primary);
-  border-left-color: var(--secondary);
-  border-top-color: var(--yellow);
-  border-bottom-color: var(--yellow);
-  border-right-style: dashed;
-  border-right-width: 1.5px;
-  border-radius: 2px;
-}
-
-.img-gallery-uiux::-webkit-scrollbar-thumb {
-  border-radius: 2px;
-  background-color: var(--primary);
-}
-
 .img-gallery {
   height: fit-content;
   width: 100%;
@@ -704,12 +667,12 @@ div:has(> .right) {
 }
 .img-gallery::-webkit-scrollbar-track {
   background-color: var(--base);
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
   border-bottom-color: var(--secondary);
   border-left-color: var(--yellow);
   border-right-color: var(--yellow);
   border-top-style: dashed;
-  border-top-width: 1.5px;
+  border-top-width: 2.5px;
   border-radius: 2px;
 }
 .img-gallery::-webkit-scrollbar-thumb {
@@ -776,6 +739,44 @@ div:has(> .right) {
 
 #watch-list-landing {
   background: url(images/Movie-list.png) no-repeat center center/cover;
+}
+
+/* Woof UIUX */
+.content-uiux {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content-uiux > div, .content-uiux > div > p {
+  width: 100%;
+}
+
+.img-gallery-uiux {
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: 22px;
+}
+
+.img-gallery-uiux::-webkit-scrollbar {
+  width: 10px;
+}
+
+.img-gallery-uiux::-webkit-scrollbar-track {
+  background-color: var(--base);
+  border: 2px solid var(--primary);
+  border-left-color: var(--secondary);
+  border-top-color: var(--yellow);
+  border-bottom-color: var(--yellow);
+  border-right-style: dashed;
+  border-right-width: 2.5px;
+  border-radius: 2px;
+}
+
+.img-gallery-uiux::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--primary);
 }
 
 #woof-case-study {
