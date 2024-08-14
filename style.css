@@ -650,13 +650,17 @@ div:has(> .right) {
 
 .content-uiux {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+}
+
+.content-uiux > div, .content-uiux > div > p {
   width: 100%;
 }
 
 .img-gallery-uiux {
   height: 500px;
-  width: fit-content;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
