@@ -584,12 +584,12 @@ div:has(> .right) {
 
 /* Pop up */
 .popup {
-  height: 500px;
+  height: 555px;
   width: 660px;
   position: fixed;
-  top: 8vh;
+  top: 50px;
   left: 17.5vw;
-  padding: 3.5% 5%;
+  padding: 3% 5%;
   background-color: rgba(var(--rgb-base), 0.5);
   backdrop-filter: blur(8px);
   border-radius: 0px;
