@@ -188,6 +188,12 @@ div:has(> .left, > .left-2) {
   outline-offset: 15px;
   width: 40%;
   text-align: right;
+  background-color: var(--primary);
+}
+
+.about-me-div h2, .about-me-div p {
+  color: var(--base);
+  font-weight: bold;
 }
 
 .left {
@@ -650,7 +656,7 @@ div:has(> .right) {
 
 .content-uiux {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -660,9 +666,29 @@ div:has(> .right) {
 
 .img-gallery-uiux {
   height: 500px;
-  width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  margin-left: 18px;
+}
+
+.img-gallery-uiux::-webkit-scrollbar {
+  width: 10px;
+}
+
+.img-gallery-uiux::-webkit-scrollbar-track {
+  background-color: var(--base);
+  border: 1px solid var(--primary);
+  border-left-color: var(--secondary);
+  border-top-color: var(--yellow);
+  border-bottom-color: var(--yellow);
+  border-right-style: dashed;
+  border-right-width: 1.5px;
+  border-radius: 2px;
+}
+
+.img-gallery-uiux::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: var(--primary);
 }
 
 .img-gallery {
@@ -674,7 +700,7 @@ div:has(> .right) {
   overflow-y: hidden;
 }
 .img-gallery::-webkit-scrollbar {
-  height: 8px;
+  height: 10px;
 }
 .img-gallery::-webkit-scrollbar-track {
   background-color: var(--base);
