@@ -750,7 +750,12 @@ div:has(> .right) {
 
 .content-uiux > div, .content-uiux > div > p {
   width: 100%;
+}
+
+.content-uiux > div > p {
+  width: 100%;
   margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .img-gallery-uiux {
@@ -919,8 +924,13 @@ div:has(> .right) {
     text-align: left;
   }
 
-  /* .app-imgs .app-img-city2table {
-    width: 364px;
-    height: 204px;
-  } */
+  .content-uiux {
+    flex-direction: column;
+  }
+
+  .img-gallery-uiux {
+    height: fit-content;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }
