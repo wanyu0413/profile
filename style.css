@@ -304,7 +304,7 @@ div:has(> .right) {
 .btn-53 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: var(--base);
+  background-color: var(--secondary);
   background-image: none;
   color: var(--secondary);
   cursor: pointer;
@@ -339,7 +339,7 @@ div:has(> .right) {
   font-size: 13px;
   margin: 16px 6px;
   border: 5px solid var(--secondary);
-  border-radius: 999px;
+  border-radius: 50px;
   box-sizing: border-box;
   display: block;
   font-weight: 900;
@@ -348,8 +348,14 @@ div:has(> .right) {
   text-transform: uppercase;
 }
 .btn-53:hover {
-  background: var(--yellow);
+  background: var(--primary);
+  border: 5px solid var(--primary);
+  transition: 0.5s ease-in-out;
 }
+.btn-53:not(:hover) {
+  transition: 0.5s ease-in-out;
+}
+
 .btn-53 .original {
   background: transparent;
   color: var(--primary);
@@ -364,7 +370,7 @@ div:has(> .right) {
 }
 .btn-53 .letters {
   display: inline-flex;
-  padding: 1rem 2rem;
+  padding: .5rem 1.5rem;
 }
 .btn-53 span {
   opacity: 0;
@@ -405,17 +411,18 @@ div:has(> .right) {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 90px 0px;
 }
 
 .project-layer {
   height: 100%;
   width: 100%;
-  background-color: rgba(var(--rgb-base), 0.5);
+  background-color: rgba(var(--rgb-primary), 0.5);
 }
 
 .binfind-img {
   background-image: url(images/Binfind.png);
-  height: 700px;
+  height: 686px;
   width: 336px;
   background-position: 0px -41px;
   background-repeat: no-repeat;
@@ -437,7 +444,7 @@ div:has(> .right) {
 
 .woof-img {
   background-image: url(images/Woof.jpg);
-  height: 700px;
+  height: 686px;
   width: 336px;
   /* Center and scale the image nicely */
   background-position: top;
