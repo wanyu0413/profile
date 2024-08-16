@@ -181,7 +181,7 @@ div:has(> .left, > .left-2) {
 }
 
 .about-me-div {
-  margin-left: 60px;
+  margin-left: 92px;
   padding: 20px 60px;
   border: 2px solid;
   outline: 8px solid;
@@ -200,7 +200,7 @@ div:has(> .left, > .left-2) {
   transform: rotate(270deg);
   position: absolute;
   text-align: left;
-  left: -186px;
+  left: -246px;
   top: 80px;
 }
 
@@ -208,8 +208,8 @@ div:has(> .left, > .left-2) {
   transform: rotate(270deg);
   position: absolute;
   text-align: left;
-  left: -72px;
-  top: 75px;
+  left: -110px;
+  top: 70px;
 }
 
 div:has(> .right) {
@@ -222,8 +222,15 @@ div:has(> .right) {
   transform: rotate(90deg);
   position: absolute;
   text-align: right;
-  right: -122px;
+  right: -166px;
   top: 140px;
+}
+
+.right-2 {
+  position: absolute;
+  text-align: right;
+  top: -50px;
+  right: 30px;
 }
 
 /* skills section */
@@ -274,16 +281,14 @@ div:has(> .right) {
 }
 
 .skill-title {
+  letter-spacing: 0.25em;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 1em;
   margin: 0;
-  line-height: 1.2em;
-  font-size: 58px;
   color: var(--secondary);
   text-transform: uppercase;
   z-index: 5;
-  /* background-color: var(--secondary);
-  color: transparent;
-  text-shadow: 3px 3px 4px rgb(0 0 0 / 40%);
-  background-clip: text; */
 }
 
 /* button_in_cards */
@@ -818,6 +823,7 @@ div:has(> .right) {
 
 /* Footer */
 .card-social-icons {
+  position: relative;
   text-align: center;
   background-color: var(--base);
   padding: 16px;
