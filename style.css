@@ -500,91 +500,44 @@ div:has(> .right) {
   background-position: 0.1em 0, 0 100%, -3em 83%;
 }
 
-.images-leaning > div:nth-of-type(4) > .project-img {
+.binfind-img {
   background-image: url(images/Binfind.png);
   height: 100%;
-  /* Center and scale the image nicely */
-  background-position: 0% 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.images-leaning > div:nth-of-type(3) {
-  --resize: 0.96;
-  margin-left: -15.3em;
-  transform: scaleY(0.98) translate(-8em, -2.1em);
-}
-
-.images-leaning > div:nth-of-type(3):before {
-  background-size: 100% 84%, 100% 16%, 100% 10%;
-  background-position: 0.4em 0, 0 100%, -3em 81%;
-}
-
-.images-leaning > div:nth-of-type(3) > .project-img {
-  background-image: url(images/CIty2table.png);
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: 0% 20%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.images-leaning > div:nth-of-type(2) {
-  --resize: 0.925;
-  margin-left: 10em;
-  transform: scaleY(0.965) translate(-17em, -4.2em);
-}
-
-.images-leaning > div:nth-of-type(2):before {
-  background-size: 100% 83%, 100% 17%, 100% 10%;
-  background-position: 0.6em 0, 0.1em 100%, -3em 81%;
-}
-
-.images-leaning > div:nth-of-type(2) > .project-img {
-  background-image: url(images/Woof.jpg);
-  height: 100%;
+  width: 100%;
   /* Center and scale the image nicely */
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.images-leaning > div:nth-of-type(1) {
-  --resize: 0.895;
-  margin-left: 35.2em;
-  transform: scaleY(0.94) translate(-26.6em, -6.2em);
-}
-
-.images-leaning > div:nth-of-type(1):before {
-  background-size: 100% 82%, 100% 18%, 100% 10%;
-  background-position: 0.8em 0, 0.1em 100%, -3em 80%;
-}
-
-.images-leaning > div:nth-of-type(1) > .project-img {
-  background-image: url(images/Movie-list.png);
+.city2table-img {
+  background-image: url(images/CIty2table.png);
   height: 100%;
+  width: 100%;
   /* Center and scale the image nicely */
-  background-position: top left;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.images-basic {
-  width: 600px;
-  padding: 5em 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.images-basic > div {
-  width: 130px;
-}
-
-.images-basic img {
+.woof-img {
+  background-image: url(images/Woof.jpg);
+  height: 100%;
   width: 100%;
-  display: block;
+  /* Center and scale the image nicely */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.watch-list-img {
+  background-image: url(images/Movie-list.png);
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Pop up */
