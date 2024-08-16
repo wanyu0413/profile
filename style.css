@@ -337,8 +337,7 @@ div:has(> .right) {
 }
 .btn-53 {
   font-size: 13px;
-  /* margin: 16px 6px; */
-  margin: 30em auto 0;
+  margin: 16px 6px;
   border: 5px solid var(--secondary);
   border-radius: 999px;
   box-sizing: border-box;
@@ -402,15 +401,16 @@ div:has(> .right) {
 }
 
 /* Projects */
-/* div:has(> .project) {
-  display: flex;
-  flex-direction: column;
-} */
-
 .project {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-layer {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(var(--rgb-base), 0.5);
 }
 
 .binfind-img {
