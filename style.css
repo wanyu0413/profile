@@ -420,6 +420,15 @@ div:has(> .right) {
   background-color: rgba(var(--rgb-primary), 0.5);
 }
 
+/* .project-layer:hover {
+  background-color: transparent;
+  transition: 1s;
+}
+
+.project-layer:not(:hover) {
+  transition: 1s;
+} */
+
 .binfind-img {
   background-image: url(images/Binfind.png);
   height: 686px;
