@@ -48,13 +48,13 @@ h1 {
 }
 
 #hello-header {
-  padding-top: 90px;
+  padding-top: 180px;
   margin: 0px auto;
   text-transform: uppercase;
   color: var(--secondary);
   line-height: 1.6em;
   letter-spacing: 0.25em;
-  font-size: 37px;
+  font-size: 40px;
   font-weight: bold;
   font-style: normal;
   text-align: center;
@@ -63,10 +63,10 @@ h1 {
 .logo {
   text-align: center;
   width: 65%;
-  height: 35vh;
+  height: 20vh;
   margin: auto;
   position: absolute;
-  top: 0;
+  top: 10px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -75,7 +75,7 @@ h1 {
 }
 
 .logo b {
-  font: 400 16vh "Vibur";
+  font: 400 18vh "Vibur";
   color: var(--primary);
   text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444,
     0 0 0.1em #ff4444, 0 10px 3px #000;
@@ -127,9 +127,9 @@ h1 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border: 6px solid var(--primary);
   margin: 30px 0px;
-  outline: 2px dashed var(--secondary);
+  outline: 8px dotted var(--secondary);
   outline-offset: 15px;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .center-circles {
@@ -137,23 +137,24 @@ h1 {
   justify-content: center;
   align-items: center;
   /* flex-direction: column; */
-  margin-top: 50vh;
+  margin-top: 70vh;
 }
 
 .guide-circle {
   font-family: "Waiting for the Sunrise", cursive;
-  font-size: 18px;
-  color: var(--primary);
+  font-size: 20px;
+  color: var(--base);
   height: 160px;
   width: 160px;
   border: 6px solid var(--secondary);
   border-radius: 50%;
-  outline: 1px dashed var(--primary);
+  outline: 4px dotted var(--primary);
   outline-offset: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 2px;
+  background: var(--secondary);
 }
 
 .guide-circle:hover {
