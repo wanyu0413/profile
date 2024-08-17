@@ -134,10 +134,12 @@ h1 {
   width: 240px;
   height: 240px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  border: 6px solid var(--primary);
+  /* border: 6px solid var(--primary); */
+  border: 3px solid var(--primary);
   margin: 30px 0px;
-  outline: 8px dotted var(--secondary);
-  outline-offset: 15px;
+  /* outline: 8px dotted var(--secondary); */
+  outline: 8px solid var(--secondary);
+  outline-offset: 16px;
   opacity: 0.75;
 }
 
@@ -157,7 +159,7 @@ h1 {
   width: 160px;
   border: 6px solid var(--secondary);
   border-radius: 50%;
-  outline: 4px dotted var(--primary);
+  outline: 2.5px solid var(--primary);
   outline-offset: 10px;
   display: flex;
   justify-content: center;
