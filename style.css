@@ -423,7 +423,7 @@ div:has(> .right) {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 90px 0px;
+  margin: 160px 0px;
 }
 
 .project-layer {
@@ -443,7 +443,7 @@ div:has(> .right) {
 
 .binfind-img {
   background-image: url(images/Binfind.png);
-  height: 686px;
+  height: 610px;
   width: 336px;
   background-position: 0px -41px;
   background-repeat: no-repeat;
@@ -465,7 +465,7 @@ div:has(> .right) {
 
 .woof-img {
   background-image: url(images/Woof.jpg);
-  height: 686px;
+  height: 610px;
   width: 336px;
   /* Center and scale the image nicely */
   background-position: top;
