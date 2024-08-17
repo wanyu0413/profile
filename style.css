@@ -119,6 +119,14 @@ h1 {
   }
 }
 
+.logo h2 {
+  color: var(--secondary);
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: 100;
+  font-style: normal;
+  margin-top: 40px;
+}
+
 .img-circle {
   /* border-radius: 56% 44% 34% 66% / 57% 60% 40% 43%; */
   border-radius: 50%;
@@ -159,6 +167,8 @@ h1 {
 
 .guide-circle:hover {
   background: var(--yellow);
+  border: 6px solid var(--yellow);
+  text-shadow: 0px 4px 6px rgb(0 0 0 / 50%);
   transition: 0.5s;
   color: var(--secondary);
   z-index: 5;
