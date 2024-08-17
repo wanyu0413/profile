@@ -479,7 +479,7 @@ div:has(> .right) {
   width: 773px;
   height: 336px;
   /* Center and scale the image nicely */
-  background-position: top left;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px auto;
@@ -844,5 +844,19 @@ div:has(> .right) {
     height: fit-content;
     margin-left: 0px;
     margin-top: 20px;
+  }
+
+  .binfind-img, .woof-img {
+    width: 50%;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .city2table-img, .watch-list-img {
+    width: 100%;
+    height: 228px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
