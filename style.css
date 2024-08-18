@@ -431,7 +431,7 @@ div:has(> .right) {
 .project-layer {
   height: 100%;
   width: 100%;
-  background-color: rgba(var(--rgb-primary), 0.5);
+  background-color: rgba(var(--rgb-primary), 0.35);
 }
 
 /* .project-layer:hover {
@@ -444,7 +444,7 @@ div:has(> .right) {
 } */
 
 .binfind-img {
-  background-image: url(images/Binfind.png);
+  background-image: url(images/Binfind.jpg);
   height: 610px;
   width: 336px;
   background-position: top;
@@ -454,7 +454,7 @@ div:has(> .right) {
 }
 
 .city2table-img {
-  background-image: url(images/CIty2table.png);
+  background-image: url(images/CIty2table.jpg);
   width: 773px;
   height: 336px;
   /* Center and scale the image nicely */
@@ -477,7 +477,7 @@ div:has(> .right) {
 }
 
 .watch-list-img {
-  background-image: url(images/Movie-list.png);
+  background-image: url(images/Movie-list.jpg);
   width: 773px;
   height: 336px;
   /* Center and scale the image nicely */
