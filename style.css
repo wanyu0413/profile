@@ -147,16 +147,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
   margin-top: 70vh;
+  gap: 10px;
 }
 
 .guide-circle {
   font-family: "Waiting for the Sunrise", cursive;
   font-size: 20px;
   color: var(--base);
-  height: 160px;
-  width: 160px;
+  height: 100px;
+  width: 100px;
   border: 6px solid var(--secondary);
   border-radius: 50%;
   outline: 2.5px solid var(--primary);
@@ -774,8 +774,8 @@ div:has(> .right) {
   }
 
   .guide-circle {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
     font-size: 16px;
   }
 
@@ -791,6 +791,7 @@ div:has(> .right) {
   .center-circles {
     flex-direction: column;
     margin-top: 36vh;
+    gap: 0px;
   }
 
   .skills {
