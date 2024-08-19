@@ -793,6 +793,7 @@ div:has(> .right) {
     flex-direction: column;
     margin-top: 36vh;
     gap: 0px;
+    text-align: center;
   }
 
   .skills {
