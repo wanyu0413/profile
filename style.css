@@ -211,7 +211,6 @@ div:has(> .left, > .left-2) {
 }
 
 .left {
-  transform: rotate(270deg);
   position: absolute;
   text-align: left;
   left: -246px;
@@ -219,14 +218,13 @@ div:has(> .left, > .left-2) {
 }
 
 .left-2 {
-  transform: rotate(270deg);
   position: absolute;
   text-align: left;
-  left: -110px;
-  top: 70px;
+  left: 250px;
+  bottom: 0px;
 }
 
-div:has(> .right) {
+div:has(> .right, > .right-2) {
   position: relative;
   margin-top: 220px;
   width: 100%;
@@ -236,22 +234,31 @@ div:has(> .right) {
   transform: rotate(90deg);
   position: absolute;
   text-align: right;
-  right: 358px;
-  top: 70px;
+  right: 180px;
+  top: -96px;
+  white-space: pre;
 }
 
 .right-2 {
+  transform: rotate(90deg);
+  position: absolute;
+  text-align: right;
+  left: 85px;
+  top: 230px;
+}
+
+.left {
   position: absolute;
   text-align: right;
   top: -50px;
-  right: 30px;
+  left: 30px;
 }
 
 /* skills section */
 .skills {
   display: flex;
   justify-content: flex-end;
-  margin-right: 30px;
+  margin-right: -23px;
 }
 
 .skills-category {
@@ -270,10 +277,15 @@ div:has(> .right) {
   position: relative;
 }
 
+.skills li:has(> .skill-item):nth-last-child(1) {
+  padding-right: 0px;
+}
+
 .skill-item {
   display: flex;
   align-items: center;
-  padding: 0px 18px;
+  justify-content: space-between;
+  padding: 0px 0px 0px 18px;
   margin: 0;
   border-left: 16px solid var(--primary);
 }
@@ -787,6 +799,10 @@ div:has(> .right) {
 
   .about-me-div {
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    padding: 20px 30px;
   }
 
   .center-circles {
@@ -797,24 +813,16 @@ div:has(> .right) {
   }
 
   .skills {
-    display: block;
+    flex-direction: column;
+    gap: 70px;
   }
 
   .skills li:has(> .skill-item) {
     margin-top: 16px;
   }
 
-  .right {
-    top: 200px;
-  }
-
-  .right-2 {
-    right: -10px;
-    letter-spacing: 0.1em;
-  }
-
-  .left {
-    top: 220px;
+  .skill-item {
+    justify-content: flex-start;
   }
 
   .popup {
@@ -860,5 +868,33 @@ div:has(> .right) {
     height: 228px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .left {
+    letter-spacing: 0.1em;
+    left: 0px;
+  }
+
+  .left-2 {
+    transform: rotate(90deg);
+    right: -158px;
+    left: unset;
+    bottom: 500px;
+  }
+
+  .right {
+    right: -240px;
+    top: 236px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .right-2 {
+    right: -236px;
+    left: unset;
+  }
+
+  .skills li:has(> .skill-item):nth-last-child(1) {
+    padding-right: 16px;
   }
 }
