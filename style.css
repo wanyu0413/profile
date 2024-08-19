@@ -171,7 +171,7 @@ h1 {
 .guide-circle:hover {
   background: var(--yellow);
   border: 6px solid var(--yellow);
-  text-shadow: 0px 4px 5px rgba(var(--rgb-base), 0.5);
+  text-shadow: 0px 4px 3px rgba(var(--rgb-base), 0.3);
   transition: 0.5s;
   color: var(--secondary);
   z-index: 5;
