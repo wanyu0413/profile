@@ -189,7 +189,7 @@ h1 {
 }
 
 .about-me-div {
-  margin-left: 92px;
+  margin-left: 0px;
   padding: 20px 60px;
   border: 2px solid;
   outline: 8px solid;
@@ -236,8 +236,8 @@ div:has(> .right) {
   transform: rotate(90deg);
   position: absolute;
   text-align: right;
-  right: -166px;
-  top: 140px;
+  right: 358px;
+  top: 70px;
 }
 
 .right-2 {
@@ -450,7 +450,7 @@ div:has(> .right) {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 52px;
+  margin-left: -23px;
 }
 
 .city2table-img {
@@ -462,7 +462,7 @@ div:has(> .right) {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px auto;
-  margin-right: 0px;
+  margin-right: -23px;
 }
 
 .woof-img {
@@ -473,7 +473,7 @@ div:has(> .right) {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 52px;
+  margin-left: -23px;
 }
 
 .watch-list-img {
@@ -485,7 +485,7 @@ div:has(> .right) {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px auto;
-  margin-right: 0px;
+  margin-right: -23px;
 }
 
 /* Pop up */
