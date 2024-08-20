@@ -27,6 +27,18 @@ div:has(> #me-img) {
   right: 45px;
   bottom: 10px;
 }
+div:has(> #skill-img) {
+  position: absolute;
+  left: -65px;
+  bottom: -155px;
+}
+#skill-img {
+  position: absolute;
+  height: 210px;
+  width: auto;
+  left: 1px;
+  bottom: 105px;
+}
 
 html,
 body {
@@ -234,8 +246,8 @@ div:has(> .left, > .left-2) {
 .left-2 {
   position: absolute;
   text-align: left;
-  left: 250px;
-  bottom: 0px;
+  left: 40px;
+  top: 0px;
 }
 
 div:has(> .right, > .right-2) {
