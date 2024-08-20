@@ -236,20 +236,6 @@ div:has(> .left, > .left-2) {
   width: 100%;
 }
 
-.left {
-  position: absolute;
-  text-align: left;
-  left: -246px;
-  top: 280px;
-}
-
-.left-2 {
-  position: absolute;
-  text-align: left;
-  left: 40px;
-  top: 0px;
-}
-
 div:has(> .right, > .right-2) {
   position: relative;
   margin-top: 220px;
@@ -280,11 +266,22 @@ div:has(> .right, > .right-2) {
   left: 30px;
 }
 
+.left-2 {
+  position: absolute;
+  text-align: left;
+  left: -71px;
+  top: -30px;
+}
+
 /* skills section */
 .skills {
   display: flex;
   justify-content: flex-end;
-  margin-right: -23px;
+  /* margin-right: -23px; */
+  background-color: rgba(219, 199, 171, 1);
+  margin-left: -6%;
+  margin-right: -6%;
+  padding: 18px 0px;
 }
 
 .skills-category {
@@ -292,19 +289,15 @@ div:has(> .right, > .right-2) {
   position: absolute;
   margin: 0;
   top: 0;
-  left: -6px;
+  left: -4px;
   color: var(--yellow);
-  text-shadow: 3px 4px rgb(0 0 0 / 55%);
+  text-shadow: -2px 4px 2.5px rgba(var(--rgb-base), 0.5);
 }
 
 .skills li:has(> .skill-item) {
   list-style: none;
   padding-right: 16px;
   position: relative;
-}
-
-.skills li:has(> .skill-item):nth-last-child(1) {
-  padding-right: 0px;
 }
 
 .skill-item {
@@ -324,7 +317,6 @@ div:has(> .right, > .right-2) {
 
 .skill-item h2 {
   font-family: "Waiting for the Sunrise", cursive;
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5em;
@@ -340,7 +332,6 @@ div:has(> .right, > .right-2) {
   margin: 0;
   color: var(--secondary);
   text-transform: uppercase;
-  z-index: 5;
 }
 
 /* button_in_cards */
