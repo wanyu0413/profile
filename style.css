@@ -832,10 +832,12 @@ div:has(> .right, > .right-2) {
   .skills {
     flex-direction: column;
     gap: 70px;
+    padding-bottom: 35px;
   }
 
   .skills li:has(> .skill-item) {
     margin-top: 16px;
+    margin-left: 22px;
   }
 
   .skill-item {
@@ -894,9 +896,9 @@ div:has(> .right, > .right-2) {
 
   .left-2 {
     transform: rotate(90deg);
-    right: -158px;
     left: unset;
-    bottom: 500px;
+    top: 430px;
+    right: -292px;
   }
 
   .right {
@@ -913,5 +915,16 @@ div:has(> .right, > .right-2) {
 
   .skills li:has(> .skill-item):nth-last-child(1) {
     padding-right: 16px;
+  }
+
+  div:has(> #me-img) {
+    right: -66px;
+    bottom: -252px;
+    z-index: 5;
+  }
+
+  div:has(> #skill-img) {
+    left: -23px;
+    bottom: -269px;
   }
 }
