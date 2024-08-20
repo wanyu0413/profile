@@ -25,7 +25,7 @@ div:has(> #me-img) {
   height: 210px;
   width: auto;
   right: 45px;
-  bottom: 10px;
+  bottom: 7px;
 }
 div:has(> #skill-img) {
   position: absolute;
