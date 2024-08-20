@@ -14,6 +14,20 @@
   --body-w: 800px;
 }
 
+/* Images */
+div:has(> #me-img) {
+  position: absolute;
+  right: -80px;
+  bottom: -165px;
+}
+#me-img {
+  position: absolute;
+  height: 210px;
+  width: auto;
+  right: 45px;
+  bottom: 10px;
+}
+
 html,
 body {
   overflow-x: hidden;
