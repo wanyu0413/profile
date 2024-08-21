@@ -39,6 +39,18 @@ div:has(> #skill-img) {
   left: 1px;
   bottom: 105px;
 }
+div:has(> #project-bin-img) {
+  position: absolute;
+  right: -40px;
+  top: 400px;
+}
+#project-bin-img {
+  position: absolute;
+  height: 210px;
+  width: auto;
+  right: -24px;
+  bottom: 50px;
+}
 
 html,
 body {
