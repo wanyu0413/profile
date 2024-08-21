@@ -41,14 +41,14 @@ div:has(> #skill-img) {
 }
 div:has(> #project-bin-img) {
   position: absolute;
-  right: -40px;
+  right: -64px;
   top: 400px;
 }
 #project-bin-img {
   position: absolute;
   height: 210px;
   width: auto;
-  right: -24px;
+  right: -4px;
   bottom: 50px;
 }
 
