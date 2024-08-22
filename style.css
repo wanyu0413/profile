@@ -58,6 +58,14 @@ div:has(> #project-bin-img) {
   right: 2px;
   bottom: 122px;
 }
+#vertical-bar {
+  position: absolute;
+  height: 240px;
+  width: auto;
+  left: -100px;
+  top: -170px;
+  z-index: -1;
+}
 
 html,
 body {
@@ -511,6 +519,7 @@ div:has(> .right, > .right-2) {
   background-size: cover;
   margin: 0px auto;
   margin-right: -23px;
+  position: relative;
 }
 
 .woof-img {
