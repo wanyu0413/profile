@@ -956,4 +956,12 @@ div:has(> .right, > .right-2) {
     left: -23px;
     bottom: -269px;
   }
+
+  div:has(> #project-bin-img) {
+    top: 448px;
+  }
+
+  #skill-img, #project-bin-img {
+    z-index: 5;
+  }
 }
