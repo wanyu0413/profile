@@ -50,6 +50,7 @@ div:has(> #project-bin-img) {
   width: auto;
   right: 36px;
   top: -400px;
+  z-index: -1;
 }
 #project-bin-img {
   position: absolute;
