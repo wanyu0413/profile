@@ -42,7 +42,7 @@ div:has(> #skill-img) {
 div:has(> #project-bin-img) {
   position: absolute;
   right: -66px;
-  top: 400px;
+  top: 430px;
 }
 #three-dots {
   position: absolute;
@@ -63,9 +63,21 @@ div:has(> #project-bin-img) {
   position: absolute;
   height: 240px;
   width: auto;
-  left: -100px;
-  top: -170px;
+  left: 88%;
+  top: -390px;
   z-index: -1;
+}
+div:has(> #peek-img) {
+  position: absolute;
+  left: -492px;
+  top: 220px;
+}
+#peek-img {
+  position: absolute;
+  height: 210px;
+  width: auto;
+  left: 37px;
+  top: 30px;
 }
 
 html,
@@ -309,7 +321,7 @@ div:has(> .right, > .right-2) {
   background-color: rgba(219, 199, 171, 1);
   margin-left: -6%;
   margin-right: -6%;
-  padding: 18px 0px;
+  padding: 60px 0px;
 }
 
 .skills-category {
