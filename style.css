@@ -63,7 +63,7 @@ div:has(> #project-bin-img) {
   position: absolute;
   height: 240px;
   width: auto;
-  left: 88%;
+  left: 380px;
   top: -390px;
   z-index: -1;
 }
