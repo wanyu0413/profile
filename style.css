@@ -976,4 +976,9 @@ div:has(> .right, > .right-2) {
   #skill-img, #project-bin-img {
     z-index: 5;
   }
+
+  div:has(> #peek-img) {
+    left: -62px;
+    z-index: -1;
+  }
 }
