@@ -921,6 +921,7 @@ div:has(> .right, > .right-2) {
     height: 390px;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
 
   .city2table-img, .watch-list-img {
@@ -970,7 +971,7 @@ div:has(> .right, > .right-2) {
   }
 
   div:has(> #project-bin-img) {
-    top: 448px;
+    top: 835px;
   }
 
   #skill-img, #project-bin-img {
