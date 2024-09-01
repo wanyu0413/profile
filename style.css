@@ -560,7 +560,7 @@ div:has(> .right, > .right-2) {
 
 /* Pop up */
 .popup {
-  height: 533px;
+  max-height: 533px;
   width: 660px;
   position: fixed;
   top: 50px;
@@ -605,7 +605,7 @@ div:has(> .right, > .right-2) {
 }
 
 .popup p {
-  width: 50%;
+  /* width: 50%; */
   line-height: 1.3;
   letter-spacing: 0.08em;
   font-size: 20px;
@@ -719,7 +719,7 @@ div:has(> .right, > .right-2) {
 }
 
 #watch-list-landing {
-  background: url(images/Movie-list.png) no-repeat center center/cover;
+  background: url(images/Movie-list.jpg) no-repeat center center/cover;
 }
 
 /* Woof UIUX */
@@ -888,7 +888,7 @@ div:has(> .right, > .right-2) {
   .popup {
     left: 8vw;
     width: 68vw;
-    height: 70vh;
+    max-height: 70vh;
     padding: 7.5% 6%;
     background-color: rgba(var(--rgb-base), 0.5);
     backdrop-filter: blur(8px);
@@ -902,7 +902,7 @@ div:has(> .right, > .right-2) {
   }
 
   .popup p {
-    width: 74%;
+    width: 90%;
     text-align: left;
   }
 
