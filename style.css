@@ -18,7 +18,8 @@
 div:has(> #me-img) {
   position: absolute;
   right: -80px;
-  bottom: -165px;
+  bottom: -252px;
+  z-index: 5;
 }
 #me-img {
   position: absolute;
@@ -310,7 +311,7 @@ div:has(> .right, > .right-2) {
   position: absolute;
   text-align: left;
   left: -71px;
-  top: -30px;
+  top: -34px;
 }
 
 /* skills section */
@@ -942,6 +943,7 @@ div:has(> .right, > .right-2) {
     left: unset;
     top: 430px;
     right: -292px;
+    text-align: end;
   }
 
   .right {
