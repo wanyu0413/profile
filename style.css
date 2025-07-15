@@ -30,7 +30,6 @@ div:has(> #me-img) {
 }
 div:has(> #skill-img) {
   position: absolute;
-  left: -65px;
   bottom: -155px;
 }
 #skill-img {
@@ -42,7 +41,7 @@ div:has(> #skill-img) {
 }
 div:has(> #project-bin-img) {
   position: absolute;
-  right: -66px;
+  right:calc(var(--container-left-margin) * -1);
   top: 430px;
 }
 #three-dots {
@@ -64,14 +63,14 @@ div:has(> #project-bin-img) {
   position: absolute;
   height: 240px;
   width: auto;
-  left: 380px;
-  top: -390px;
+  left: 200%;
+  top: 100%;
   z-index: -1;
 }
 div:has(> #peek-img) {
   position: absolute;
-  left: -492px;
-  top: 220px;
+  top: 50%;
+  transform: translateX(-38px);
 }
 #peek-img {
   position: absolute;
@@ -79,6 +78,9 @@ div:has(> #peek-img) {
   width: auto;
   left: 37px;
   top: 30px;
+}
+.img-align-left {
+  left: calc(var(--container-left-margin) * -1);
 }
 
 html,
@@ -533,7 +535,6 @@ div:has(> .right, > .right-2) {
   background-size: cover;
   margin: 0px auto;
   margin-right: -23px;
-  position: relative;
 }
 
 .woof-img {
@@ -856,6 +857,10 @@ div:has(> .right, > .right-2) {
     margin-left: 22px;
   }
 
+  .skill-title {
+    opacity: 0.8;
+  }
+
   .skill-item {
     justify-content: flex-start;
   }
@@ -948,7 +953,14 @@ div:has(> .right, > .right-2) {
   }
 
   div:has(> #project-bin-img) {
-    top: 835px;
+    top: 800px;
+    transform: scale(0.7);
+    transform-origin: right top;
+  }
+
+  #three-dots {
+    right: -5%;
+    top: -150%;
   }
 
   #skill-img, #project-bin-img, #peek-img {
@@ -956,11 +968,12 @@ div:has(> .right, > .right-2) {
   }
 
   #vertical-bar {
-    left: 40px;
+    left: 20%;
+    top: -100%;
+    transform: scale(0.7);
   }
 
   div:has(> #peek-img) {
-    top: 1100px;
-    left: -62px;
+    top: 100%;
   }
 }
