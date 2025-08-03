@@ -372,13 +372,12 @@
       </ul>
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="bundle.js" defer></script>
     <script>
-      AOS.init();
+      window.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+      });
     </script>
-    <script src="typed-text-landing.js"></script>
-    <script src="typed-text.js"></script>
-    <script src="popup.js"></script>
-    <script src="imgAlign.js"></script>
   </body>
 </html>
